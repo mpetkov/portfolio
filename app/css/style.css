@@ -1,0 +1,101 @@
+/*
+TRANSITIONS
+    -webkit-transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
+
+
+
+DIfferent background size per size to minimize load time!
+    @media (min-width: 1200px)
+.Work--coop .Sitehead-cover, .WorkItem--coop {
+    background-image: url("../images/coop/coop-thumb-large.jpg");
+}
+@media (min-width: 601px)
+.Work--coop .Sitehead-cover, .WorkItem--coop {
+    background-image: url("../images/coop/coop-thumb-medium.jpg");
+}
+
+*/
+
+
+
+html
+{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	min-width: 300px;
+	overflow: hidden;
+	font-size: 100%;
+}
+
+h2
+{
+	font-size: 1.5em;
+	line-height: normal;
+	margin: 0;
+	font-weight: normal;
+}
+
+p
+{
+	font-size: 0.5em;
+	margin: 0;
+	line-height: normal;
+}
+
+h2, p, button
+{
+	-webkit-transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.bg-image
+{
+	background: no-repeat center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-attachment: fixed;
+	min-height: 350px;
+
+}
+
+.ios .bg-image
+{
+	background-attachment: scroll;
+}
+
+
+.button
+{
+	background: none;
+	border-radius: 5px;
+	border: 1px solid #ffffff;
+	font-size: 0.45em;
+	line-height: 2em;
+	margin: 1.5em;
+	width: 8em;
+	letter-spacing: 1px;
+}
+
+.button:hover
+{
+	background: white;
+	color: black;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span
+{
+	background-color: #FFFFFF;
+}
+
+
+@media (max-height: 350px) 
+{
+  .bg-image
+  {
+    background-attachment: scroll;
+  }
+}

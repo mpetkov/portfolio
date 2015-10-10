@@ -1,0 +1,1 @@
+(function (){	'use strict';	var work = function ($timeout, configConstant)	{		return{			scope: {},			restrict: 'A',			templateUrl: 'src/components/work/work.html',			replace: true,			controller: 'workController',			controllerAs: 'work',			bindToController: true		};	};	angular.module('portfolio').directive('work', ['$timeout', 'configConstant', work]);})();

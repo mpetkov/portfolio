@@ -1,0 +1,39 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Marin Petkov Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://mpetkov87@bitbucket.org/mpetkov87/portfolio.git"
+  },
+  "author": "mpetkov",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.0.1",
+    "gulp": "^3.9.0",
+    "gulp-angular-templatecache": "^1.7.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-help": "^1.6.1",
+    "gulp-htmlmin": "^1.1.4",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-inject": "^1.5.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-rev-all": "^0.8.21",
+    "gulp-uglify": "^1.4.0",
+    "gulp-util": "^3.0.6",
+    "imagemin-pngquant": "^4.2.0",
+    "jshint-stylish": "^2.0.1",
+    "main-bower-files": "^2.9.0",
+    "run-sequence": "^1.1.2"
+  }
+}

@@ -1,0 +1,142 @@
+{
+	"splash": 
+	{
+		"cta": "Click to RSVP",
+		"headlineImg": "img/headline-us.svg",
+		"headlineAlt": "Kristine and Marin are getting married.",
+		"date": "07.25.15"
+	},
+	"header": 
+	{
+		"splash": "Home",
+		"map": "Details",
+		"engagement": "Engagement",
+		"rsvp": "RSVP",
+		"gifts":"Gifts"
+	},
+	"countdown": 
+	{
+		"title": "Countdown"
+	},
+	"event": 
+	{
+		"title": "Event Details",
+		"wedding": "Wedding",
+		"hotel": "Accommodation",
+		"directions": "Directions"
+	},
+	"wedding": 
+	{
+		"p1": "The wedding ceremony and reception will be held at the Royal Fox Country Club in Saint Charles, Illinois.",
+		"p2": "Date",
+		"p3": "Saturday, July 25th, 2015",
+		"p4": "Time",
+		"p5": "6:00 pm to 12:00 am",
+		"p6": "Location",
+		"p7": "The Royal Fox Country Club",
+		"p8": "4405 Royal & Ancient Drives, Saint Charles, Illinois",
+		"p9": "Attire",
+		"p10": "Semi-formal* (No denim or shorts)",
+		"p11": "Parking",
+		"p12": "Free valet service provided",
+		"p13": "*Check out the <a href='http://www.royalfoxcc.com/-dress-code' target='_blank'>official&nbsp;dress&nbsp;code</a> for the venue."
+	},
+	"hotel": 
+	{
+		"p1": "For your convenience, we have arranged for block rates at Hampton Inn & Suites in Saint Charles, Illinois.",
+		"p2": "Check-In Date",
+		"p3": "Saturday, July 25th, 2015 at 3:00&nbsp;pm",
+		"p4": "Rate",
+		"p5": "$109.00 (plus tax) for 1 King Bed* (Book by July 4th)",
+		"p6": "Instructions",
+		"p7": "Book online by clicking <a href='http://hamptoninn.hilton.com/en/hp/groups/personalized/C/CHIFFHX-MPW-20150725/index.jhtml?WT.mc_id=POG' target='_blank'>HERE</a>",
+		"p8": "Book by phone by calling (630) 584-0222 (Code: CHXMPW)",
+		"p9": "Location",
+		"p11": "2875 Foxfield Road, Saint Charles, Illinois 60174",
+		"p12": "Transportation",
+		"p13": "Free shuttle service between the venue and the hotel",
+		"p14": "*There is a softball tournament on the same weekend so all double beds are booked."
+	},
+	"engagement": 
+	{
+		"title": "The Engagement",
+		"p1": "(Told by the bride)",
+		"p2": "On Saturday, August 9, 2014 Marin proposed to me. It was a beautiful sunny day. There were so many signs pointing to what was to come on that day. The first being that Meet the Parents was on television.  How perfect to start the day with a movie proposal that involved a teacher and her students.",
+		"p3": "Marin's parents came over to renew their passports. It is always a great day when they come to visit. They surprised us with wine glasses and my favorite bottle of wine, Moscato. This was a perfect coincidence because they were unaware of what was to come later that evening. The wine was later used after the proposal to celebrate the wonderful occasion!",
+		"p4": "The second sign was that while we were strolling the city, on our way to Millennium Park, everywhere we looked there was a couple taking their wedding pictures. There was a photo shoot taking place at the abandoned building across Marin’s downtown apartment, at my favorite spot on the bridge overlooking the Boeing building on the lake, and at the fountain in Millennium Park. We even passed a wedding shop that I never noticed before. ",
+		"p5": "After visiting Millennium Park, we went back to the apartment to rest. We were cuddling on the bed and talking about what was to come because our summer was coming to an end, and school was about to begin. Being a little sad about the thought of leaving Marin for the summer, he convinced me to go out because we were going to go to our favorite Italian restaurant, Molly's cupcakes, and watching the fireworks at Navy Pier.",
+		"p6": "We took a cab to Oak Street Beach. It has amazing views with the backdrop being the city skyline. We arrived an hour before the fireworks were scheduled to begin. It was an evening of laughing and him holding me in his arms. This was a picturesque evening in the city.  ",
+		"p7": "As the fireworks began, I thought how amazing it was to be able to see fireworks in Chicago. As always, Marin was the perfect man to share that moment with. While the finale was commencing, Marin asked me to stand up. He told me how I was his best friend and that he could imagine spending the rest of his life with me. That's when he asked me to marry him and to be his tennis partner for life! I said yes!!!!",
+		"p8": "The thoughts that ran through my mind before the proposal was that meeting Marin was my life changing moment. And I would be lucky if I could share my life with him. Marin had planned the simple yet perfect proposal on August 9th, celebrating 5 months together. Although this wasn't a long time, spending all the days of my life with my perfect person is..."
+		},
+	"rsvp": 
+	{
+		"title": "Please RSVP by June 25",
+		"title2": "Thank you for RSVPing!",
+		"p2": "We are looking forward to celebrating with you!",
+		"p3": "or you may rsvp by email:",
+		"p4": "kristineandmarin@gmail.com",
+		"p5": "For questions, please click the button below",
+		"form": "Contact Us"
+	},
+	"rsvpModal": 
+	{
+		"customTitle": "Custom RSVP",
+		"contactTitle": "Contact Form",
+		"searchTitle": "Find your RSVP",
+		"foundTitle": "RSVP for",
+		"foundHelp1": "Not your invitation?",
+		"foundHelp2": "to try another search.",
+		"searchHelp": "if you can't find your invitation.",
+		"clickHere": "Click here",
+		"password": "Your home street number",
+		"passwordPlaceholder": "Number only",
+		"select": "Select an option",
+		"guests": "RSVP name",
+		"name": "Name",
+		"attending": "Attending",
+		"email": "Email",
+		"somg": "Song Request",
+		"comments": "Comments",
+		"message": "Message",
+		"commentsPlaceholder": "Any additional information, comments, or questions",
+		"close": "Close",
+		"search": "Search",
+		"back": "Back to Search",
+		"submit": "Submit",
+		"none": "None",
+		"yes": "YES",
+		"no": "NO",
+		"song": "Song request",
+		"guest": "Guest",
+		"food": "Dietary Restrictions",
+		"foodPlaceholder": "Vegetarian? Food allergies?",
+		"passwordTitle": "Wrong Street Number!",
+		"passwordBody": "The street number doesn't match the address in the system.  Please try again or use a custom rsvp.",
+		"try": "Try Again",
+		"custom": "Custom RSVP",
+		"namePlaceholder": "Full name",
+		"emailPlaceholder": "example@gmail.com",
+		"songPlaceholder": "Tell us what you want to hear"
+	},
+	"rsvpNotification": 
+	{
+		"title": "RSVP Submitted!",
+		"rsvp": "Thank you for taking the time to RSVP."
+	},
+	"rsvpSubmitted": 
+	{
+		"title": "RSVP Already Submitted!",
+		"p1": "The selected RSVP has already been submitted.  If you would like to submit a new rsvp, please use the \"Custom RSVP\" button.  Otherwise, use the \"Contact Us\" button."
+	},
+	"gifts": 
+	{
+		"title": "Gifts",
+		"or": "Or check out our registry at the following locations"
+	},
+	"footer": 
+	{
+		"copyright": "© 2015 kristineandmarin.com.",
+		"owner": "Created By: Marin Petkov"
+	}
+}

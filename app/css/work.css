@@ -1,0 +1,31 @@
+
+#work .item
+{
+	display: table;
+	position: absolute;
+	text-align: center;
+	width: 90%;
+	max-width: 24em;
+	margin: 0 auto;
+    right: 0;
+    left: 0;
+}
+
+
+#work .item.bottom
+{
+	bottom: 0;
+}
+
+#work .item.top
+{
+	top: 0;
+}
+
+#work .item div
+{
+	 display: table-cell;
+    vertical-align: middle;
+}
+
+

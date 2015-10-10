@@ -1,0 +1,43 @@
+.fallback
+{
+	width: 100%;
+	padding: 0;
+	display: none;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	z-index: 1050;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.fallback .box
+{
+	display: inline-block;
+	padding: 10px;
+	max-width: 400px;
+	margin: 0;
+}
+
+.fallback img
+{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.ie8 .fallback
+{
+	display: table;
+}
+
+.ie7 .fallback, .ie6 .fallback
+{
+	display: block;
+}
+
+.ie7 .fallback img, .ie6 .fallback img
+{
+	margin-top: 100px;
+}
