@@ -2,7 +2,7 @@
 {
 	'use strict';
 
-	var resizeWork = function ()
+	var resizeWork = function (configConstant)
 	{
 		return {
 			restrict: "A",
@@ -11,23 +11,22 @@
 				scope.$on('resize::resize', function (event, data)
 				{
 					var height = data.height;
-					if(height < 350)
+					if(height < configConstant.setup.minHeight)
 					{
-						height = 350;
+						height = configConstant.setup.minHeight;
 					}
-					
+
 					var fontSize = height * 0.0025;
-					
 					if(fontSize < 1.2)
 					{
 						fontSize = 1.2;
 					}
-					
-					element.css({"font-size": fontSize + "em", "height": height*0.25 + "px"});
+
+					element.css({"font-size": fontSize + "em", "height": height * 0.25 + "px"});
 				});
 			}
 		};
 	};
 
-	angular.module('portfolio').directive('resizeWork', [resizeWork]);
+	angular.module('portfolio').directive('resizeWork', ['configConstant', resizeWork]);
 })();

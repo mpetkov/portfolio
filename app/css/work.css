@@ -1,4 +1,3 @@
-
 #work .item
 {
 	display: table;
@@ -10,7 +9,6 @@
     right: 0;
     left: 0;
 }
-
 
 #work .item.bottom
 {
@@ -24,8 +22,6 @@
 
 #work .item div
 {
-	 display: table-cell;
+	display: table-cell;
     vertical-align: middle;
 }
-
-

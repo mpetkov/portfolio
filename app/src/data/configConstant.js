@@ -1,29 +1,17 @@
 (function ()
 {
 	'use strict';
-	
+
 	var configConstant =
 	{
-		version: '1.0.4',
-		menuItems:
-		[
-			{id: 'splash'},
-			{id: 'map'},
-			{id: 'engagement'},
-			{id: 'rsvp'},
-			{id: 'gifts'}
-		],
-		eventMenuItems:
-		[
-			{id: 'portfolio'},
-			{id: 'hotel'}
-		],
-		params:
-		[
-			{id: 'menu', value: 'splash'},
-			{id: 'event', value: 'portfolio'}
-		]
+		setup:
+		{
+			version: '1.0.0',
+			languages: ['en-us'],
+			language: 'en-us',
+			minHeight: 350
+		}
 	};
-	
+
 	angular.module('portfolio').constant('configConstant', configConstant);
 })();

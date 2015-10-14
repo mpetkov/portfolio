@@ -2,7 +2,7 @@
 {
 	'use strict';
 
-	var fullpage = function ()
+	var fullpage = function (configConstant)
 	{
 		return {
 			restrict: "A",
@@ -13,14 +13,13 @@
 					$(element).fullpage
 					({
 						navigation: true,
-						navigationTooltips: ['firstSlide', 'secondSlide'],
 						css3: false,
-						responsiveHeight: 350
+						responsiveHeight: configConstant.setup.minHeight
 					});
 				});
 			}
 		};
 	};
 
-	angular.module('portfolio').directive('fullpage', [fullpage]);
+	angular.module('portfolio').directive('fullpage', ['configConstant', fullpage]);
 })();

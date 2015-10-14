@@ -1,10 +1,4 @@
 /*
-TRANSITIONS
-    -webkit-transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
-    transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
-
-
-
 DIfferent background size per size to minimize load time!
     @media (min-width: 1200px)
 .Work--coop .Sitehead-cover, .WorkItem--coop {
@@ -16,8 +10,6 @@ DIfferent background size per size to minimize load time!
 }
 
 */
-
-
 
 html
 {
@@ -49,7 +41,6 @@ h2, p, button
     transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-
 .bg-image
 {
 	background: no-repeat center;
@@ -66,7 +57,6 @@ h2, p, button
 {
 	background-attachment: scroll;
 }
-
 
 .button
 {
@@ -90,7 +80,6 @@ h2, p, button
 {
 	background-color: #FFFFFF;
 }
-
 
 @media (max-height: 350px) 
 {

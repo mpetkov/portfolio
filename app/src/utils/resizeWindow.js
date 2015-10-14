@@ -10,7 +10,7 @@
 			{
 				var timer;
 				var w = angular.element($window);
-				
+
 				w.on('resize', function (e)
 				{
 					triggerTimer();
@@ -20,20 +20,20 @@
 				{
 					triggerTimer();
 				});
-				
+
 				scope.$on('resize::trigger', function (event, data)
 				{
 					triggerEvent();
 				});
-				
+
 				function triggerTimer()
-				{ 
+				{
 					$timeout.cancel(timer);
 					timer = $timeout(triggerEvent, 400);
 				}
-				
+
 				function triggerEvent()
-				{ 
+				{
 					scope.$broadcast('resize::resize', {width: $window.innerWidth, height: $window.innerHeight});
 				}
 			}

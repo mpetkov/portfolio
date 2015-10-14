@@ -6,16 +6,16 @@
 		data-ng-style="{'background-image':'url(img/{{item.img}})', 'background-color':'#{{item.color}}'}">
 		<div class="top item" data-resize-work>
 			<div>
-				<p>Design + Code</p>
-				<h2>Green Hill</h2>
+				<p>{{item.type}}</p>
+				<h2>{{item.name}}</h2>
 			</div>
 		</div>
 
 		<div class="bottom item" data-resize-work>
 			<div>
-				<p>Coop is the second largest grocery retail company in Sweden with over 3 million members. For two years I worked with improving Coop’s website and their online shopping experience.</p>
-				<button class="button">More Info</button>
-				<button class="button">Visit Site</button>
+				<p>{{item.description}}</p>
+				<button class="button">{{'work.info' | translate}}</button>
+				<button class="button">{{'work.site' | translate}}</button>
 			</div>
 		</div>
 	</div>

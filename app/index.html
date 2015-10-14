@@ -59,8 +59,19 @@
 		<meta name="theme-color" content="#ffffff">
 	</head>
 
-	<body data-init data-resize-window>
-		<div id="preloader" class="center-outer" data-ng-if="!shared.isLoaded">
+	<body data-resize-window>
+		
+		
+		<!-- http://www.bennadel.com/blog/2758-creating-a-pre-bootstrap-loading-screen-in-angularjs.htm 
+		http://tympanus.net/codrops/2014/04/25/freebie-flat-style-squared-preloaders/
+  http://www.ng-newsletter.com/advent2013/#!/day/21
+  http://chieffancypants.github.io/angular-loading-bar/
+  http://pathgather.github.io/please-wait/
+  https://www.phase2technology.com/blog/angularjs-two-ways-loading-animations/
+  http://jsfiddle.net/KmXTy/1/
+		
+		-->
+		<div id="preloader" class="center-outer" data-ng-if="false">
 			<div class="center-middle">
 				<div class="center-inner">
 					<img src="img/logo.svg" alt="Vivr" />
@@ -92,7 +103,7 @@
 			</div>
 		</div>
 
-		<div data-fullpage data-ng-cloack class="ng-cloack" data-ng-if="shared.isLoaded">
+		<div data-fullpage data-ng-cloack class="ng-cloack">
 			<div data-work></div>
 		</div>
 		
@@ -110,15 +121,16 @@
 
 		<!-- inject:js -->
 		<script src="src/app.js"></script>
-		<script src="src/components/fullpage.js"></script>
 		<script src="src/data/configConstant.js"></script>
 		<script src="src/data/sharedService.js"></script>
 		<script src="src/utils/repeatComplete.js"></script>
 		<script src="src/utils/resizeWindow.js"></script>
 		<script src="src/utils/translationService.js"></script>
+		<script src="src/components/jquery/fullpage.js"></script>
 		<script src="src/components/work/resizeWork.js"></script>
 		<script src="src/components/work/work.js"></script>
 		<script src="src/components/work/workController.js"></script>
+		<script src="src/components/work/workService.js"></script>
 		<!-- endinject -->
 		
 		<!--<![endif]-->
