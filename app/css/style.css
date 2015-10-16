@@ -35,7 +35,7 @@ p
 	line-height: normal;
 }
 
-h2, p, button
+h2, p, button, span
 {
 	-webkit-transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
     transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
@@ -62,7 +62,7 @@ h2, p, button
 {
 	background: none;
 	border-radius: 5px;
-	border: 1px solid #ffffff;
+	border: 1px solid;
 	font-size: 0.45em;
 	line-height: 2em;
 	margin: 1.5em;
@@ -78,7 +78,7 @@ h2, p, button
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span
 {
-	background-color: #FFFFFF;
+	//background-color: #FFFFFF;
 }
 
 @media (max-height: 350px) 

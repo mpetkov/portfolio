@@ -1,9 +1,9 @@
 <div id="work">
 	<div 
 		class="bg-image section" 
-		data-ng-repeat="item in work.items" 
+		data-ng-repeat="item in work.config.portfolio" 
 		data-repeat-complete
-		data-ng-style="{'background-image':'url(img/{{item.img}})', 'background-color':'#{{item.color}}'}">
+		data-ng-style="{'background-image':'url(img/{{item.img}})', 'color':'#{{item.color}}', 'border-color':'#{{item.color}}', 'background-color':'#{{item.bgColor}}'}">
 		<div class="top item" data-resize-work>
 			<div>
 				<p>{{item.type}}</p>

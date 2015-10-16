@@ -14,7 +14,14 @@
 					({
 						navigation: true,
 						css3: false,
-						responsiveHeight: configConstant.setup.minHeight
+						responsiveHeight: configConstant.setup.minHeight,
+						onLeave: function (index, nextIndex, direction) 
+						{
+							if(configConstant.portfolio[nextIndex-1])
+							{
+								$('#fp-nav').find('span').css('background-color', '#' + configConstant.portfolio[nextIndex-1].color);
+							}
+						}
 					});
 				});
 			}
