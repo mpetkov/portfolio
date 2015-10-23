@@ -1,0 +1,1 @@
+(function (){	'use strict';	var navigation = function ()	{		return{			scope: {},			restrict: 'A',			templateUrl: 'src/components/navigation/navigation.html',			replace: true,			controller: 'navigationController',			controllerAs: 'navigation',			bindToController: true		};	};	angular.module('portfolio').directive('navigation', [navigation]);})();

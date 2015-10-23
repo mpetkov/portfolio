@@ -1,0 +1,52 @@
+.navigation
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	width: 100%;
+}
+
+.navigation .logo
+{
+	position: absolute;
+	left: 30px;
+	top: 15px;
+}
+
+.navigation .logo:hover
+{
+	-webkit-transform: rotate(45deg); 
+-moz-transform: rotate(45deg); 
+-o-transform: rotate(45deg);
+-ms-transform: rotate(45deg); 
+}
+
+.navigation .nav
+{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+
+.navigation .nav .bar
+{
+	height: 3px;
+    background: white;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.navigation .nav:hover
+{
+	top: 26px;
+}
+
+.navigation .nav:hover .bar
+{
+	margin-bottom: 8px;
+}

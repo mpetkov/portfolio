@@ -11,40 +11,48 @@
 			language: 'en-us',
 			minHeight: 350
 		},
-		portfolio:
+		content:
 		[
 			{
+				type: "splash",
+				color: "FFFFFF"
+			},
+			{
+				type: "work",
 				img: "vivr-bg.jpg",
 				color: "333333",
 				bgColor: "eaeaea",
-				type: "",
+				tagline: "",
 				name: "",
 				description: "",
 				url: ""
 			},
 			{
+				type: "work",
 				img: "wedding-bg.jpg",
 				color: "ffffff",
 				bgColor: "ea848f",
-				type: "",
+				tagline: "",
 				name: "",
 				description: "",
 				url: ""
 			},
 			{
+				type: "work",
 				img: "greenhill-bg.jpg",
 				color: "ffffff",
 				bgColor: "64af84",
-				type: "",
+				tagline: "",
 				name: "",
 				description: "",
 				url: ""
 			},
 			{
+				type: "work",
 				img: "zeoliton-bg.jpg",
 				color: "ffffff",
 				bgColor: "96bc33",
-				type: "",
+				tagline: "",
 				name: "",
 				description: "",
 				url: ""

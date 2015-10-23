@@ -1,4 +1,4 @@
-#work .item
+.work .item
 {
 	display: table;
 	position: absolute;
@@ -10,17 +10,17 @@
     left: 0;
 }
 
-#work .item.bottom
+.work .item.bottom
 {
 	bottom: 0;
 }
 
-#work .item.top
+.work .item.top
 {
 	top: 0;
 }
 
-#work .item div
+.work .item div
 {
 	display: table-cell;
     vertical-align: middle;

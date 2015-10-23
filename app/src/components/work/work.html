@@ -1,22 +1,18 @@
-<div id="work">
-	<div 
-		class="bg-image section" 
-		data-ng-repeat="item in work.config.portfolio" 
-		data-repeat-complete
-		data-ng-style="{'background-image':'url(img/{{item.img}})', 'color':'#{{item.color}}', 'border-color':'#{{item.color}}', 'background-color':'#{{item.bgColor}}'}">
-		<div class="top item" data-resize-work>
-			<div>
-				<p>{{item.type}}</p>
-				<h2>{{item.name}}</h2>
-			</div>
+<div 
+	class="bg-image work" 
+	data-ng-style="{'background-image':'url(img/{{work.item.img}})', 'color':'#{{work.item.color}}', 'border-color':'#{{work.item.color}}', 'background-color':'#{{work.item.bgColor}}'}">
+	<div class="top item" data-resize-work>
+		<div>
+			<p>{{work.item.tagline}}</p>
+			<h2>{{work.item.name}}</h2>
 		</div>
+	</div>
 
-		<div class="bottom item" data-resize-work>
-			<div>
-				<p>{{item.description}}</p>
-				<button class="button">{{'work.info' | translate}}</button>
-				<button class="button">{{'work.site' | translate}}</button>
-			</div>
+	<div class="bottom item" data-resize-work>
+		<div>
+			<p>{{work.item.description}}</p>
+			<button class="button">{{'work.info' | translate}}</button>
+			<button class="button">{{'work.site' | translate}}</button>
 		</div>
 	</div>
 </div>
