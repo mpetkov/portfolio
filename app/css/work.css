@@ -1,26 +1,27 @@
-.work .item
+.item
 {
 	display: table;
 	position: absolute;
-	text-align: center;
 	width: 90%;
+	height: 100%;
 	max-width: 24em;
 	margin: 0 auto;
     right: 0;
     left: 0;
+	z-index: 10;
 }
 
-.work .item.bottom
+.item.bottom
 {
 	bottom: 0;
 }
 
-.work .item.top
+.item.top
 {
 	top: 0;
 }
 
-.work .item div
+.item div
 {
 	display: table-cell;
     vertical-align: middle;

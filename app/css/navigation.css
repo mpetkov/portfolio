@@ -17,9 +17,14 @@
 .navigation .logo:hover
 {
 	-webkit-transform: rotate(45deg); 
--moz-transform: rotate(45deg); 
--o-transform: rotate(45deg);
--ms-transform: rotate(45deg); 
+	-moz-transform: rotate(45deg); 
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg); 
+}
+
+.navigation .logo:hover path
+{
+	fill: #a4c959;
 }
 
 .navigation .nav
@@ -49,4 +54,5 @@
 .navigation .nav:hover .bar
 {
 	margin-bottom: 8px;
+	background-color: #a4c959;
 }

@@ -20,6 +20,11 @@ html
 	font-size: 100%;
 }
 
+h1
+{
+	margin: 0;
+}
+
 h2
 {
 	font-size: 1.5em;
@@ -78,7 +83,7 @@ h2, p, button, span, .nav, path, .logo
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span
 {
-	//background-color: #FFFFFF;
+	background-color: #FFFFFF;
 }
 
 @media (max-height: 350px) 
