@@ -22,11 +22,6 @@
 	-ms-transform: rotate(45deg); 
 }
 
-.navigation .logo:hover path
-{
-	fill: #a4c959;
-}
-
 .navigation .nav
 {
 	position: absolute;
@@ -54,5 +49,4 @@
 .navigation .nav:hover .bar
 {
 	margin-bottom: 8px;
-	background-color: #a4c959;
 }

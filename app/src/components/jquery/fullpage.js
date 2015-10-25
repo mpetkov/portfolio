@@ -2,64 +2,53 @@
 {
 	'use strict';
 
-	var fullpage = function ($rootScope, $timeout, $interval, configConstant)
+	var fullpage = function ($rootScope, configConstant)
 	{
-		var interval;
-
 		return {
 			restrict: "A",
 			link: function (scope, element, attributes)
 			{
-				scope.$on('portfolio::loaded', function (event, data)
+				scope.$on('fullpage::init', function (event, data)
 				{
-					$timeout(function ()
-					{
-						$(element).fullpage
-						({
-							navigation: true,
-							css3: false,
-							responsiveHeight: configConstant.setup.minHeight,
-							controlArrows: false,
-							afterRender: function () 
+					$(element).fullpage
+					({
+						navigation: true,
+						css3: false,
+						responsiveHeight: 350,
+						controlArrows: false,
+						afterRender: function ()
+						{
+							$rootScope.$broadcast('portfolio::ready');
+							$rootScope.$broadcast('resize::trigger');
+						},
+						onLeave: function (index, nextIndex, direction)
+						{
+							if (index == '1')
 							{
-								$rootScope.$broadcast('fullpage::ready');
-								console.log('1111');
-								//on page load, start the slideshow
-								/*interval = $interval(function () {
-									$.fn.fullpage.moveSlideRight();
-								},8000);*/
-							},
-							onLeave: function (index, nextIndex, direction)
-							{
-								if (index == '1') 
-								{
-									$interval.cancel(interval);
-								}
-
-
-								if (configConstant.content[nextIndex - 1])
-								{
-									$('#fp-nav').find('span').css('background-color', '#' + configConstant.content[nextIndex - 1].color);
-									$('.navigation .bar').css('background-color', '#' + configConstant.content[nextIndex - 1].color);
-									$('.navigation path').css('fill', '#' + configConstant.content[nextIndex - 1].color);
-								}
-							},
-							onSlideLeave: function (anchorLink, index, slideIndex, direction) {
-								//$.fn.fullpage.setScrollingSpeed(0);
-								//$('.fp-section').find('.fp-slidesContainer').hide();
-							},
-							// Display the slides container by fading it in after the next slide has been loaded.
-							afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-								//$('.fp-section').find('.fp-slidesContainer').fadeIn(700);
-								//$.fn.fullpage.setScrollingSpeed(700);
+								$rootScope.$broadcast('slideshow::stop');
 							}
-						});
-					}, 400);
+							else if (nextIndex == '1')
+							{
+								$rootScope.$broadcast('slideshow::start');
+							}
 
+							if (configConstant.content[nextIndex - 1])
+							{
+								$('#fp-nav').find('span').css('background-color', '#' + configConstant.content[nextIndex - 1].color);
+								$('.navigation .bar').css('background-color', '#' + configConstant.content[nextIndex - 1].color);
+								$('.navigation path').css('fill', '#' + configConstant.content[nextIndex - 1].color);
+							}
+						}
+					});
+				});
+
+				scope.$on('fullpage::change', function (event, index)
+				{
+					$.fn.fullpage.moveTo(index);
 				});
 			}
 		};
 	};
 
-	angular.module('portfolio').directive('fullpage', ['$rootScope', '$timeout', '$interval', 'configConstant', fullpage]);
+	angular.module('portfolio').directive('fullpage', ['$rootScope', 'configConstant', fullpage]);
 })();

@@ -1,18 +1,18 @@
 <div 
 	class="bg-image work" 
-	data-ng-style="{'background-image':'url(img/{{work.item.img}})', 'color':'#{{work.item.color}}', 'border-color':'#{{work.item.color}}', 'background-color':'#{{work.item.bgColor}}'}">
+	data-ng-style="{'background-image':'url({{item.img}})', 'color':'#{{item.color}}', 'border-color':'#{{item.color}}', 'background-color':'#{{item.bgColor}}'}">
 	<div class="top item" data-resize-work>
 		<div>
-			<p>{{work.item.tagline}}</p>
-			<h2>{{work.item.name}}</h2>
+			<p>{{'work.' + item.tag + '.subhead'| translate}}</p>
+			<h2>{{'work.' + item.tag + '.name'| translate}}</h2>
 		</div>
 	</div>
 
 	<div class="bottom item" data-resize-work>
 		<div>
-			<p>{{work.item.description}}</p>
-			<button class="button">{{'work.info' | translate}}</button>
-			<button class="button">{{'work.site' | translate}}</button>
+			<p>{{'work.' + item.tag + '.description'| translate}}</p>
+			<button class="button">{{'work.info'| translate}}</button>
+			<button class="button">{{'work.site'| translate}}</button>
 		</div>
 	</div>
 </div>

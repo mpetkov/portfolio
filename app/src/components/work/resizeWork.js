@@ -2,7 +2,7 @@
 {
 	'use strict';
 
-	var resizeWork = function (configConstant)
+	var resizeWork = function ()
 	{
 		return {
 			restrict: "A",
@@ -11,13 +11,14 @@
 				scope.$on('resize::resize', function (event, data)
 				{
 					var height = data.height;
-					if(height < configConstant.setup.minHeight)
+					if (height < 350)
 					{
-						height = configConstant.setup.minHeight;
+						height = 350;
 					}
 
 					var fontSize = height * 0.0025;
-					if(fontSize < 1.2)
+					
+					if (fontSize < 1.2)
 					{
 						fontSize = 1.2;
 					}
@@ -28,5 +29,5 @@
 		};
 	};
 
-	angular.module('portfolio').directive('resizeWork', ['configConstant', resizeWork]);
+	angular.module('portfolio').directive('resizeWork', [resizeWork]);
 })();
