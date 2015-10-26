@@ -35,8 +35,8 @@
 							if (configConstant.content[nextIndex - 1])
 							{
 								$('#fp-nav').find('span').css('background-color', '#' + configConstant.content[nextIndex - 1].color);
-								$('.navigation .bar').css('background-color', '#' + configConstant.content[nextIndex - 1].color);
-								$('.navigation path').css('fill', '#' + configConstant.content[nextIndex - 1].color);
+								$('.header .bar').css('background-color', '#' + configConstant.content[nextIndex - 1].color);
+								$('.header path').css('fill', '#' + configConstant.content[nextIndex - 1].color);
 							}
 						}
 					});

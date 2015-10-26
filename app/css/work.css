@@ -26,3 +26,30 @@
 	display: table-cell;
     vertical-align: middle;
 }
+
+
+.item.bottom div
+{
+	padding-top: 20px;
+}
+    
+
+.fp-section.active .work  .item
+{
+	-webkit-animation: animation 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animation 1s cubic-bezier(0.7,0,0.3,1) both;
+
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+
+@-webkit-keyframes animation
+{
+	from 
+	{ 
+		opacity: 0; 
+		-webkit-transform: 
+			translate3d(0,50px,0); 
+	}
+}

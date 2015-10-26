@@ -27,10 +27,10 @@ h1
 
 h2
 {
-	font-size: 1.5em;
+	font-size: 1em;
 	line-height: normal;
 	margin: 0;
-	font-weight: normal;
+	font-weight: 700;
 }
 
 p
@@ -66,19 +66,30 @@ h2, p, button, span, .nav, path, .logo
 .button
 {
 	background: none;
-	border-radius: 5px;
-	border: 1px solid;
+	border: 2px solid;
 	font-size: 0.45em;
-	line-height: 2em;
+	padding: 5px 3px;
 	margin: 1.5em;
-	width: 8em;
+	width: 9em;
 	letter-spacing: 1px;
 }
 
 .button:hover
 {
 	background: white;
-	color: black;
+	color: #333333;
+	border-color: rgba(0,0,0,0);
+}
+
+.dark .button:hover
+{
+	background: #333333;
+	color: #FFFFFF;
+}
+
+.dark
+{
+	color: #333333;
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span

@@ -7,12 +7,34 @@
 	"work": 
 	{
 		"info": "More Info",
-		"site": "Visit Site",
+		"site": "View Website",
 		"vivr":
 		{
-			"name": "Boo",
-			"description": "asdads asdasd asd",
-			"subhead": "design"
+			"name": "VIVR LANDING PAGE",
+			"description": "Vivr is a service used to research and rate e-liequeds. Phase 1 of the project was to create a landing page to advertise the app.  Created the logo, designed the site, and coded it in Angular.",
+			"subhead": "Logo + Design + Code",
+			"date": "September, 2015"
+		},
+		"wedding":
+		{
+			"name": "WEDDING WEBSITE",
+			"description": "My own personal wedding website.  It is fully responsive and has a very easy to use RSVP functionality.  Designed the website, coded it in Angular, and created the APIs using PHP.",
+			"subhead": "Branding + Design + Code",
+			"date": "May, 2015"
+		},
+		"greenhill":
+		{
+			"name": "GREENHILL HOTEL",
+			"description": "Green Hill is a hotel and restaurant located in Stara Zagora, Bulgaria.  My responsibility was to work directly with the designer to code the website.",
+			"subhead": "Code",
+			"date": "May, 2013"
+		},
+		"zeoliton":
+		{
+			"name": "ZEOLITON",
+			"description": "A promotional site for Zeoliton which is a supplement product sold in Bulgaria.  My responsibility was to work directly with the designer to code the website.",
+			"subhead": "Code",
+			"date": "March, 2013"
 		}
 	}
 }

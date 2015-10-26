@@ -22,9 +22,6 @@
 				color: '333333',
 				bgColor: 'eaeaea',
 				tag:'vivr',
-				tagline: '',
-				name: '',
-				description: '',
 				url: ''
 			},
 			{
@@ -32,9 +29,7 @@
 				img: 'img/wedding-bg.jpg',
 				color: 'ffffff',
 				bgColor: 'ea848f',
-				tagline: '',
-				name: '',
-				description: '',
+				tag:'wedding',
 				url: ''
 			},
 			{
@@ -42,9 +37,7 @@
 				img: 'img/greenhill-bg.jpg',
 				color: 'ffffff',
 				bgColor: '64af84',
-				tagline: '',
-				name: '',
-				description: '',
+				tag:'greenhill',
 				url: ''
 			},
 			{
@@ -52,22 +45,20 @@
 				img: 'img/zeoliton-bg.jpg',
 				color: 'ffffff',
 				bgColor: '96bc33',
-				tagline: '',
-				name: '',
-				description: '',
+				tag:'zeoliton',
 				url: ''
 			}
 		],
 		slideshow:
 		[
 			{
-				img: 'img/test/01.jpg'
+				img: 'img/splash-01.jpg'
 			},
 			{
-				img: 'img/test/02.jpg'
+				img: 'img/splash-02.jpg'
 			},
 			{
-				img: 'img/test/03.jpg'
+				img: 'img/splash-03.jpg'
 			}
 		]
 	};
