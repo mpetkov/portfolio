@@ -15,7 +15,7 @@ html
 {
 	color: white;
 	font-family: 'Open Sans', sans-serif;
-	min-width: 300px;
+	min-width: 320px;
 	overflow: hidden;
 	font-size: 100%;
 }
@@ -27,7 +27,7 @@ h1
 
 h2
 {
-	font-size: 1em;
+	font-size: 1.3em;
 	line-height: normal;
 	margin: 0;
 	font-weight: 700;

@@ -19,7 +19,8 @@
 
 .section
 {
-		text-align: center;
+	text-align: center;
+	min-height: 350px;
 }
 
 
@@ -31,8 +32,8 @@
 
 .splash h1
 {
-	    margin-bottom: 0.2em;
-		    border: 2px solid white;
+	margin-bottom: 0.2em;
+	border: 2px solid white;
     display: inline-block;
     padding: 0px 25px;
 }
@@ -44,7 +45,7 @@
 
 .splash h2
 {
-	       font-size: .8em;
+	font-size: .8em;
 }
 
 .splash .arrow-holder {
@@ -75,3 +76,47 @@
     left: 0;
 }
 
+
+@media (max-width: 1000px), (max-height: 450px)
+{
+	.splash
+	{
+		font-size: 0.6em;
+	}
+}
+
+@media (max-width: 650px) 
+{
+	.splash
+	{
+		font-size: 0.4em;
+	}
+
+	.splash h1
+	{
+		padding: 0px 10px;
+	}
+}
+
+@media (max-width: 400px) 
+{  
+	.splash h1
+	{
+		font-size: 1.5em;
+	}
+
+	#fp-nav.right 
+	{
+		right: 5px;
+	}
+}
+
+
+
+@media (max-width: 320px) 
+{  
+	#fp-nav.right 
+	{
+		left: 288px;
+	}
+}

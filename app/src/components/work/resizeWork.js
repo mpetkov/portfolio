@@ -18,9 +18,9 @@
 
 					var fontSize = height * 0.0025;
 					
-					if (fontSize < 1.2)
+					if (fontSize < 1.4)
 					{
-						fontSize = 1.2;
+						fontSize = 1.4;
 					}
 
 					element.css({"font-size": fontSize + "em", "height": height * 0.25 + "px"});

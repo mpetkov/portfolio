@@ -10,7 +10,7 @@
 .header .logo
 {
 	position: absolute;
-	left: 30px;
+	left: 15px;
 	top: 15px;
 }
 
@@ -25,8 +25,8 @@
 .header .nav
 {
 	position: absolute;
-	right: 30px;
-	top: 30px;
+	right: 20px;
+    top: 20px;
 	width: 30px;
 	cursor: pointer;
 }
@@ -43,10 +43,25 @@
 
 .header .nav:hover
 {
-	top: 26px;
+	top: 16px;
 }
 
 .header .nav:hover .bar
 {
 	margin-bottom: 8px;
+}
+
+@media (max-width: 320px) 
+{  
+	.header .nav
+	{
+		left: 280px;
+		top: 10px;
+	}
+
+	.header .logo
+	{
+		left: 10px;
+		top: 10px;
+	}
 }

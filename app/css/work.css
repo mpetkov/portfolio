@@ -32,7 +32,7 @@
 {
 	padding-top: 20px;
 }
-    
+
 
 .fp-section.active .work  .item
 {
@@ -43,6 +43,11 @@
 	animation-delay: 0.4s;
 }
 
+.top p
+{
+	font-size: 0.6em;
+}
+
 
 @-webkit-keyframes animation
 {
@@ -51,5 +56,43 @@
 		opacity: 0; 
 		-webkit-transform: 
 			translate3d(0,50px,0); 
+	}
+}
+
+@media (max-height: 640px) 
+{  
+	.work.bg-image
+	{
+		background-size: 30%;
+	}
+
+	.work .button
+	{
+		border-width:  1px;
+	}
+}
+
+@media (max-height: 480px) 
+{  
+	.work.bg-image
+	{
+		background-size: 18%;
+	}
+}
+
+
+@media (max-height: 350px) 
+{  
+	.fp-section.active .work  .item
+	{
+		-webkit-animation: none !important;
+
+		-moz-animation: none !important;
+
+		-o-animation: none !important;
+
+		-ms-animation: none !important;
+
+		animation: none !important;
 	}
 }
