@@ -14,7 +14,7 @@
 					({
 						navigation: true,
 						css3: false,
-						responsiveHeight: 350,
+						responsiveHeight: 320,
 						controlArrows: false,
 						afterRender: function ()
 						{

@@ -59,29 +59,41 @@
 	}
 }
 
-@media (max-height: 640px) 
+@media (max-height: 600px) and (min-width: 1200px)
 {  
 	.work.bg-image
 	{
-		background-size: 30%;
+		background-size: 40%;
 	}
+}
 
+@media (max-height: 640px) 
+{
 	.work .button
 	{
 		border-width:  1px;
 	}
 }
 
-@media (max-height: 480px) 
+@media (max-height: 480px) and (max-width: 1200px)
 {  
 	.work.bg-image
 	{
-		background-size: 18%;
+		background-size: 28%;
 	}
 }
 
 
-@media (max-height: 350px) 
+@media (max-height: 480px) and (min-width: 1200px)
+{  
+	.work.bg-image
+	{
+		background-size: 25%;
+	}
+}
+
+
+@media (max-height: 320px) 
 {  
 	.fp-section.active .work  .item
 	{

@@ -54,7 +54,7 @@ h2, p, button, span, .nav, path, .logo
 	-o-background-size: contain;
 	background-size: contain;
 	background-attachment: fixed;
-	min-height: 350px;
+	min-height: 320px;
 	height: 100%;
 }
 
@@ -92,12 +92,17 @@ h2, p, button, span, .nav, path, .logo
 	color: #333333;
 }
 
+#fp-nav
+{
+	z-index: 0;
+}
+
 #fp-nav ul li a span, .fp-slidesNav ul li a span
 {
 	background-color: #FFFFFF;
 }
 
-@media (max-height: 350px) 
+@media (max-height: 320px) 
 {
   .bg-image
   {

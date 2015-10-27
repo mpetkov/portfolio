@@ -26,7 +26,7 @@
 {
 	position: absolute;
 	right: 20px;
-    top: 20px;
+	top: 20px;
 	width: 30px;
 	cursor: pointer;
 }
@@ -34,11 +34,11 @@
 .header .nav .bar
 {
 	height: 3px;
-    background: white;
-    width: 100%;
-    display: inline-block;
-    float: left;
-    margin-bottom: 5px;
+	background: white;
+	width: 100%;
+	display: inline-block;
+	float: left;
+	margin-bottom: 5px;
 }
 
 .header .nav:hover
@@ -51,17 +51,49 @@
 	margin-bottom: 8px;
 }
 
+
+@media (max-width: 650px) 
+{
+	.header .logo
+	{
+		-ms-transform: scale(0.5,0.5); /* IE 9 */
+		-webkit-transform: scale(0.5,0.5); /* Safari */
+		transform: scale(0.5,0.5);
+		left: -3px;
+		top: -3px;
+	}
+
+	.header .logo:hover
+	{
+		-webkit-transform: rotate(45deg) scale(0.5,0.5); 
+		-moz-transform: rotate(45deg) scale(0.5,0.5); 
+		-o-transform: rotate(45deg) scale(0.5,0.5);
+		-ms-transform: rotate(45deg) scale(0.5,0.5); 
+	}
+	
+	.header .nav
+	{
+		right: 10px;
+		top: 10px;
+		width: 25px;
+	}
+
+	.header .nav .bar
+	{
+		height: 2px;
+	}
+}
+
 @media (max-width: 320px) 
 {  
 	.header .nav
 	{
-		left: 280px;
-		top: 10px;
+		left: 286px;
 	}
 
 	.header .logo
 	{
-		left: 10px;
-		top: 10px;
+		left: -8px;
+		top: -8px;
 	}
 }

@@ -11,19 +11,26 @@
 				scope.$on('resize::resize', function (event, data)
 				{
 					var height = data.height;
-					if (height < 350)
+					if (height < 320)
 					{
-						height = 350;
+						height = 320;
+					}
+					
+					var width = data.width;
+					var heightMultiplier = 0.25;
+					if(width < 400)
+					{
+						heightMultiplier = 0.38;
 					}
 
 					var fontSize = height * 0.0025;
 					
-					if (fontSize < 1.4)
+					if (fontSize < 1.5)
 					{
-						fontSize = 1.4;
+						fontSize = 1.5;
 					}
 
-					element.css({"font-size": fontSize + "em", "height": height * 0.25 + "px"});
+					element.css({"font-size": fontSize + "em", "height": height * heightMultiplier + "px"});
 				});
 			}
 		};
