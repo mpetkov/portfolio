@@ -18,9 +18,14 @@
 					
 					var width = data.width;
 					var heightMultiplier = 0.25;
-					if(width < 400)
+					if(width < height)
 					{
-						heightMultiplier = 0.38;
+						heightMultiplier = heightMultiplier * (height/width);
+					}
+					
+					if(heightMultiplier > 0.4)
+					{
+						heightMultiplier = 0.4;
 					}
 
 					var fontSize = height * 0.0025;

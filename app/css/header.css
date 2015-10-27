@@ -56,19 +56,19 @@
 {
 	.header .logo
 	{
-		-ms-transform: scale(0.5,0.5); /* IE 9 */
-		-webkit-transform: scale(0.5,0.5); /* Safari */
-		transform: scale(0.5,0.5);
-		left: -3px;
-		top: -3px;
+		-ms-transform: scale(0.6,0.6); /* IE 9 */
+		-webkit-transform: scale(0.6,0.6); /* Safari */
+		transform: scale(0.6,0.6);
+		left: -2px;
+		top: -2px;
 	}
 
 	.header .logo:hover
 	{
-		-webkit-transform: rotate(45deg) scale(0.5,0.5); 
-		-moz-transform: rotate(45deg) scale(0.5,0.5); 
-		-o-transform: rotate(45deg) scale(0.5,0.5);
-		-ms-transform: rotate(45deg) scale(0.5,0.5); 
+		-webkit-transform: rotate(45deg) scale(0.6,0.6); 
+		-moz-transform: rotate(45deg) scale(0.6,0.6); 
+		-o-transform: rotate(45deg) scale(0.6,0.6);
+		-ms-transform: rotate(45deg) scale(0.6,0.6); 
 	}
 	
 	.header .nav
@@ -91,9 +91,4 @@
 		left: 286px;
 	}
 
-	.header .logo
-	{
-		left: -8px;
-		top: -8px;
-	}
 }

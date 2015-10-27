@@ -59,32 +59,17 @@
 	}
 }
 
-@media (max-height: 600px) and (min-width: 1200px)
-{  
-	.work.bg-image
-	{
-		background-size: 40%;
-	}
-}
-
 @media (max-height: 640px) 
 {
 	.work .button
 	{
 		border-width:  1px;
-	}
-}
-
-@media (max-height: 480px) and (max-width: 1200px)
-{  
-	.work.bg-image
-	{
-		background-size: 28%;
+		margin-top: 0.9em;
 	}
 }
 
 
-@media (max-height: 480px) and (min-width: 1200px)
+@media (max-height: 600px) and (min-width: 1650px)
 {  
 	.work.bg-image
 	{
@@ -92,6 +77,63 @@
 	}
 }
 
+@media (max-height: 480px) and (min-width: 1650px)
+{  
+	.work.bg-image
+	{
+		background-size: 20%;
+	}
+}
+
+
+@media (max-height: 480px) and (max-width: 480px)
+{  
+	.work.bg-image
+	{
+		background-size: 80%;
+	}
+}
+
+@media (max-height: 480px) and (min-width: 480px)
+{  
+	.work.bg-image
+	{
+		background-size: 35%;
+	}
+}
+
+@media (max-height: 480px) and (min-width: 700px)
+{  
+	.work.bg-image
+	{
+		background-size: 50%;
+	}
+}
+
+
+@media (max-height: 410px) and (min-width: 1650px)
+{  
+	.work.bg-image
+	{
+		background-size: 15%;
+	}
+}
+
+@media (max-height: 350px) and (min-width: 1650px)
+{ 	
+	.work.bg-image
+	{
+		background-size: 10%;
+	}
+}
+
+@media (max-height: 350px)
+{  
+	.work .item.top
+	{
+		padding-top: 15px;
+	}
+}
 
 @media (max-height: 320px) 
 {  
