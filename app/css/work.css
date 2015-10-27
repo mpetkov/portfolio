@@ -94,41 +94,37 @@
 	}
 }
 
-@media (max-height: 480px) and (min-width: 480px)
+@media (max-height: 480px) and (min-width: 700px) and (max-width: 1000px)
 {  
 	.work.bg-image
 	{
-		background-size: 35%;
+		background-size: 40%;
 	}
 }
 
-@media (max-height: 480px) and (min-width: 700px)
+@media (max-height: 430px) and (min-width: 700px)
 {  
 	.work.bg-image
 	{
-		background-size: 50%;
+		background-size: 25%;
 	}
 }
 
-
-@media (max-height: 410px) and (min-width: 1650px)
+@media (max-height: 380px) and (max-width: 480px)
 {  
 	.work.bg-image
 	{
-		background-size: 15%;
+		background-size: 60%;
 	}
 }
 
-@media (max-height: 350px) and (min-width: 1650px)
-{ 	
+@media (max-height: 350px) and (min-width: 700px)
+{ 
 	.work.bg-image
 	{
-		background-size: 10%;
+		background-size: 18%;
 	}
-}
-
-@media (max-height: 350px)
-{  
+	
 	.work .item.top
 	{
 		padding-top: 15px;
