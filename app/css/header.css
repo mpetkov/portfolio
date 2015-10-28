@@ -22,25 +22,11 @@
 	-ms-transform: rotate(45deg); 
 }
 
-.header .nav
-{
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	width: 30px;
-	cursor: pointer;
-}
 
-.header .nav .bar
-{
-	height: 3px;
-	background: white;
-	width: 100%;
-	display: inline-block;
-	float: left;
-	margin-bottom: 5px;
-}
 
+
+
+/*
 .header .nav:hover
 {
 	top: 16px;
@@ -50,7 +36,7 @@
 {
 	margin-bottom: 8px;
 }
-
+*/
 
 @media (max-width: 650px) 
 {
@@ -71,7 +57,7 @@
 		-ms-transform: rotate(45deg) scale(0.6,0.6); 
 	}
 	
-	.header .nav
+	/*.header .nav
 	{
 		right: 10px;
 		top: 10px;
@@ -81,14 +67,14 @@
 	.header .nav .bar
 	{
 		height: 2px;
-	}
+	}*/
 }
 
 @media (max-width: 320px) 
 {  
-	.header .nav
+	/*.header .nav
 	{
 		left: 286px;
-	}
+	}*/
 
 }

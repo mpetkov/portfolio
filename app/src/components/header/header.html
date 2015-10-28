@@ -2,10 +2,11 @@
 	<div class="logo">
 		<a data-ng-click="clickLogo()" href="./" data-ng-include="'img/logo-white.svg'"></a>
 	</div>
-
-	<div class="nav">
-		<span class="bar"></span>
-		<span class="bar"></span>
-		<span class="bar"></span>
-	</div>
+	
+	<button type="button" role="button" aria-label="Toggle Navigation" 
+			data-ng-click="clickMenu()" 
+			class="menu-button x" 
+			data-ng-class='{close: isMenu}'>
+	  <span class="lines"></span>
+	</button>
 </div>
