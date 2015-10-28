@@ -46,6 +46,19 @@ h2, p, button, span, .nav, path, .logo
     transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+.cover
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #000000;
+	opacity: 0.5;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+
+
 .bg-image
 {
 	background: no-repeat center;

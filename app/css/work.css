@@ -6,9 +6,14 @@
 	height: 100%;
 	max-width: 24em;
 	margin: 0 auto;
-    right: 0;
-    left: 0;
+	right: 0;
+	left: 0;
 	z-index: 10;
+}
+
+.work .item
+{
+	opacity: 0;
 }
 
 .item.bottom
@@ -24,7 +29,7 @@
 .item div
 {
 	display: table-cell;
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 
@@ -56,6 +61,11 @@
 		opacity: 0; 
 		-webkit-transform: 
 			translate3d(0,50px,0); 
+	}
+
+	to 
+	{ 
+		opacity: 1;
 	}
 }
 
@@ -124,7 +134,7 @@
 	{
 		background-size: 18%;
 	}
-	
+
 	.work .item.top
 	{
 		padding-top: 15px;
@@ -144,5 +154,10 @@
 		-ms-animation: none !important;
 
 		animation: none !important;
+	}
+
+	.work .item
+	{
+		opacity: 1;
 	}
 }
