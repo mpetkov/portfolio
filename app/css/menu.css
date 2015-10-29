@@ -1,6 +1,7 @@
 .menu .cover
 {
 	opacity: 0.9;
+	background-color: #a4c959;
 }
 
 .menu
@@ -11,7 +12,28 @@
 	z-index: 100;
 	width: 100%;
 	height: 100%;
+	text-align: center;
+	font-size: 1.4em;
 	
+}
+
+.menu ul
+{
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+}
+
+.menu ul li
+{
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.menu .top p
+{
+	font-size: 1em;
 }
 
 
@@ -21,6 +43,10 @@ http://alexgilev.com/portfolio
 
 */
 
+.menu h2
+{
+	font-size: 1.2em;
+}
 
 
 
@@ -41,23 +67,21 @@ button
 
 }
 
-
-.lines {
+.menu-button > span
+{
 	display: inline-block;
 	width: 35px;
-	height: 3px;
-	background: #FFFFFF;
-	transition: 0.3s;
 	position: relative;
 }
 
 
-.lines:before, .lines:after {
-	display: inline-block;
-	width: 100%;
+
+.menu-button .bar
+{
 	height: 3px;
 	background: #FFFFFF;
 	transition: 0.3s;
+	width: 100%;
 	position: absolute;
 	left: 0;
 	content: '';
@@ -66,21 +90,22 @@ button
 }
 
 
-.lines:before {
+.menu-button .bar.bottom
+{
 	top: 8px;
 }
 
-.lines:after {
+.menu-button .bar.top
+{
 	top: -8px;
 }
 
-
-.menu-button:hover .lines:before
+.menu-button:hover .bar.bottom
 {
 	top: 12px;
 }
 
-.menu-button:hover .lines:after
+.menu-button:hover .bar.top
 {
 	top: -12px;
 }
@@ -98,26 +123,25 @@ button
 	transform: scale3d(1, 1, 1);
 }
 
-.menu-button.x.close .lines 
+.menu-button.x.close .bar.middle 
 {
-	background: transparent;
+	opacity: 0;
 }
 
-
-.menu-button.x.close .lines:before, .menu-button.x.close .lines:after 
+.menu-button.x.close .bar.top, .menu-button.x.close .bar.bottom
 {
 	-webkit-transform-origin: 50% 50%;
 	transform-origin: 50% 50%;
 	top: 0;
 }
 
-.menu-button.x.close .lines:before 
+.menu-button.x.close .bar.top
 {
 	-webkit-transform: rotate3d(0, 0, 1, 45deg);
 	transform: rotate3d(0, 0, 1, 45deg);
 }
 
-.menu-button.x.close .lines:after 
+.menu-button.x.close .bar.bottom
 {
 	-webkit-transform: rotate3d(0, 0, 1, -45deg);
 	transform: rotate3d(0, 0, 1, -45deg);

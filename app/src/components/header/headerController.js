@@ -11,6 +11,15 @@
 		_this.clickMenu = function ()
 		{
 			_this.shared.isMenu = !_this.shared.isMenu;
+			
+			if(_this.shared.isMenu)
+			{
+				$rootScope.$broadcast('fullpage::color', 'FFFFFF');
+			}
+			else
+			{
+				$rootScope.$broadcast('fullpage::color', 'current');
+			}
 		};
 
 		_this.clickLogo = function ()
