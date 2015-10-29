@@ -38,6 +38,11 @@
 	padding-top: 20px;
 }
 
+.top p
+{
+	font-size: 0.6em;
+}
+
 
 .fp-section.active .work  .item
 {
@@ -48,10 +53,7 @@
 	animation-delay: 0.4s;
 }
 
-.top p
-{
-	font-size: 0.6em;
-}
+
 
 
 @-webkit-keyframes animation
