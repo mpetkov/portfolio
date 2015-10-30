@@ -22,7 +22,7 @@
 				color: '333333',
 				bgColor: 'eaeaea',
 				tag:'vivr',
-				url: ''
+				url: 'https://vivr.com/'
 			},
 			{
 				type: 'work',
@@ -30,7 +30,7 @@
 				color: 'ffffff',
 				bgColor: 'ea848f',
 				tag:'wedding',
-				url: ''
+				url: 'http://www.kristineandmarin.com/'
 			},
 			{
 				type: 'work',
@@ -38,7 +38,7 @@
 				color: 'ffffff',
 				bgColor: '64af84',
 				tag:'greenhill',
-				url: ''
+				url: 'http://www.greenhill.bg/'
 			},
 			{
 				type: 'work',
@@ -46,7 +46,7 @@
 				color: 'ffffff',
 				bgColor: '96bc33',
 				tag:'zeoliton',
-				url: ''
+				url: 'http://www.zeoliton.com/'
 			}
 		],
 		slideshow:
@@ -59,6 +59,21 @@
 			},
 			{
 				img: 'img/splash-03.jpg'
+			}
+		],
+		menuIcons:
+		[
+			{
+				url: 'https://www.linkedin.com/in/mpetkov',
+				img: 'img/linkedin-white.svg'
+			},
+			{
+				url: 'http://www.marinpetkov.com/resume.pdf',
+				img: 'img/cv-white.svg'
+			},
+			{
+				url: '',
+				img: 'img/github-white.svg'
 			}
 		]
 	};

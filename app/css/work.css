@@ -4,7 +4,7 @@
 	position: absolute;
 	width: 90%;
 	height: 100%;
-	max-width: 24em;
+	max-width: 28em;
 	margin: 0 auto;
 	right: 0;
 	left: 0;
@@ -44,6 +44,13 @@
 }
 
 
+.work  .item
+{
+	-webkit-animation: animationOut 0.25s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animationOut 0.25s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+
 .fp-section.active .work  .item
 {
 	-webkit-animation: animation 1s cubic-bezier(0.7,0,0.3,1) both;
@@ -68,6 +75,19 @@
 	to 
 	{ 
 		opacity: 1;
+	}
+}
+
+@-webkit-keyframes animationOut
+{
+	from 
+	{ 
+		opacity: 1;
+	}
+
+	to 
+	{ 
+		opacity: 0;
 	}
 }
 

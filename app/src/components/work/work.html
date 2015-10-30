@@ -14,7 +14,7 @@
 		<div>
 			<p>{{'work.' + item.tag + '.description'| translate}}</p>
 			<!--<button class="button">{{'work.info'| translate}}</button>-->
-			<button class="button">{{'work.site'| translate}}</button>
+			<a data-ng-href="{{item.url}}" class="button" target="_blank">{{'work.site'| translate}}</a>
 		</div>
 	</div>
 </div>
