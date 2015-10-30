@@ -37,20 +37,12 @@
 }
 
 
-/*
-use this animation for menu
-http://alexgilev.com/portfolio
-
-*/
-
 .menu h2
 {
 	font-size: 1.2em;
 	margin-top: -0.4em;
 	margin-bottom: 0.4em;
 }
-
-
 
 button 
 {
@@ -87,7 +79,6 @@ button
 	position: absolute;
 	left: 0;
 	content: '';
-	-webkit-transform-origin: 2px center;
 	transform-origin: 2px center;
 }
 
@@ -115,13 +106,11 @@ button
 
 .menu-button.close 
 {
-	-webkit-transform: scale3d(0.8, 0.8, 0.8);
 	transform: scale3d(0.8, 0.8, 0.8);
 }
 
 .desktop .menu-button.close:hover
 {
-	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
 }
 
@@ -132,102 +121,66 @@ button
 
 .menu-button.x.close .bar.top, .menu-button.x.close .bar.bottom
 {
-	-webkit-transform-origin: 50% 50%;
 	transform-origin: 50% 50%;
 	top: 0;
 }
 
 .menu-button.x.close .bar.top
 {
-	-webkit-transform: rotate3d(0, 0, 1, 45deg);
 	transform: rotate3d(0, 0, 1, 45deg);
 }
 
 .menu-button.x.close .bar.bottom
 {
-	-webkit-transform: rotate3d(0, 0, 1, -45deg);
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 
 
-
-
-
-/*
-.menu .item
-{
-	-webkit-animation: animMenu 1s cubic-bezier(0.7,0,0.3,1) both;
-	animation: animMenu 1s cubic-bezier(0.7,0,0.3,1) both;
-}
-
-
-@-webkit-keyframes animMenu
-{
-	from 
-	{ 
-		opacity: 0; 
-		-webkit-transform: 
-			translate3d(0,800px,0); 
-	}
-}
-
-@keyframes animMenu
-{
-	from 
-	{ 
-		opacity: 0; 
-		-webkit-transform: translate3d(0,800px,0); 
-		transform: translate3d(0,800px,0); 
-	}
-}
-*/
-
 .menu.hide 
 {
-	-webkit-animation: animHideMenu 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
 	animation: animHideMenu 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
 }
 
-@-webkit-keyframes animHideMenu {
-	to { -webkit-transform: translate3d(0,-100%,0); }
+@keyframes animHideMenu 
+{
+	to 
+	{ 
+		transform: translate3d(0,-100%,0); 
+	}
 }
 
-@keyframes animHideMenu {
-	to { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
+@keyframes animHideMenu 
+{
+	to 
+	{
+		transform: translate3d(0,-100%,0);
+	}
 }
 
 
 .menu.show 
 {
-	-webkit-animation: animShowMenu 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
 	animation: animShowMenu 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
 }
 
-@-webkit-keyframes animShowMenu {
-	from { -webkit-transform: translate3d(0,-100%,0); }
+@keyframes animShowMenu 
+{
+	from 
+	{ 
+		transform: translate3d(0,-100%,0); 
+	}
 }
-
-@keyframes animShowMenu {
-	from { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
-}
-
 
 
 @media (max-width: 650px) 
 {
-
 	.menu-button
 	{
-		-ms-transform: scale(0.8,0.8); /* IE 9 */
-		-webkit-transform: scale(0.8,0.8); /* Safari */
 		transform: scale(0.8,0.8);
 		top: 0px;
 		right: 0px;		
 	}
 }
-
-
-
 
 
 
@@ -248,7 +201,6 @@ button
 .icon-cube 
 {
 	position: relative;
-	-webkit-perspective: 800px;
 	perspective: 800px;
 	overflow: visible;
 }
@@ -265,7 +217,6 @@ button
 	content: "";
 	background: no-repeat center;
 	background-size: 100%;
-	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -280,7 +231,6 @@ button
 {
 	z-index: 1;
 	opacity: 0;
-	-webkit-transform: translateY(48px) rotateX(-90deg);
 	transform: translateY(48px) rotateX(-90deg);
 	background-color: #a4c959;
 }
@@ -288,14 +238,12 @@ button
 .desktop .icon-cube:hover::before 
 {
 	opacity: 0;
-	-webkit-transform: translateY(-48px) rotateX(90deg);
 	transform: translateY(-48px) rotateX(90deg);
 }
 
 .desktop .icon-cube:hover::after 
 {
 	opacity: 1;
-	-webkit-transform: rotateX(0);
 	transform: rotateX(0);
 }
 
@@ -327,8 +275,6 @@ button
 {
 	background-color: #333333;
 }
-
-
 
 
 

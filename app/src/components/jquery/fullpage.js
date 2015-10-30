@@ -61,7 +61,7 @@
 					var color = 'current';
 					if(isEnabled)
 					{
-						color = 'FFFFFF'
+						color = 'FFFFFF';
 					}
 					
 					changeColor(color);

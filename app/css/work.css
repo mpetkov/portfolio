@@ -2,9 +2,8 @@
 {
 	display: table;
 	position: absolute;
-	width: 90%;
 	height: 100%;
-	max-width: 28em;
+	width: 100%;
 	margin: 0 auto;
 	right: 0;
 	left: 0;
@@ -32,6 +31,13 @@
 	vertical-align: middle;
 }
 
+.item .container
+{
+	width: 90%;
+	max-width: 28em;
+	display: inline-block;
+}
+
 
 .item.bottom div
 {
@@ -46,30 +52,25 @@
 
 .work  .item
 {
-	-webkit-animation: animationOut 0.25s cubic-bezier(0.7,0,0.3,1) both;
 	animation: animationOut 0.25s cubic-bezier(0.7,0,0.3,1) both;
 }
 
 
 .fp-section.active .work  .item
 {
-	-webkit-animation: animation 1s cubic-bezier(0.7,0,0.3,1) both;
 	animation: animation 1s cubic-bezier(0.7,0,0.3,1) both;
-
-	-webkit-animation-delay: 0.4s;
 	animation-delay: 0.4s;
 }
 
 
 
 
-@-webkit-keyframes animation
+@keyframes animation
 {
 	from 
 	{ 
 		opacity: 0; 
-		-webkit-transform: 
-			translate3d(0,50px,0); 
+		transform: translate3d(0,50px,0); 
 	}
 
 	to 
@@ -78,7 +79,7 @@
 	}
 }
 
-@-webkit-keyframes animationOut
+@keyframes animationOut
 {
 	from 
 	{ 
@@ -197,14 +198,6 @@
 {  
 	.fp-section.active .work  .item
 	{
-		-webkit-animation: none !important;
-
-		-moz-animation: none !important;
-
-		-o-animation: none !important;
-
-		-ms-animation: none !important;
-
 		animation: none !important;
 	}
 

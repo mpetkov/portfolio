@@ -36,10 +36,7 @@ var version = pjson.version;
 var AUTOPREFIXER_BROWSERS =
 [
 	'last 3 versions',
-	'ie >= 8',
-	'ios >= 7',
-	'android >= 4.4',
-	'bb >= 10'
+	'ie >= 9'
 ];
 
 gulp.task('build-clean-temp', 'Deletes the build folder', false, function ()
@@ -68,8 +65,8 @@ gulp.task('build-js', 'Build an optimized version of all JS files', function ()
 });
 
 gulp.task('build-vendor-js', 'Build an optimized version of vendor JS files', function ()
-{
-	return gulp.src([devDest + 'lib/angular/*.js', libFiles + '/*.js'])
+{			  
+	return gulp.src([devDest + 'lib/angular/*.js', devDest + 'lib/jquery/**/*.js', devDest + 'lib/angular/*.js', libFiles + '/*.js'])
 			  .pipe(plugins.concat(scriptVendorFilename))
 			  .pipe(plugins.uglify())
 			  .pipe(gulp.dest(tmpDest + 'lib/'));

@@ -4,17 +4,20 @@
 	data-ng-style="{'background-image':'url({{item.img}})', 'background-color':'#{{item.bgColor}}'}">
 	<div class="top item" data-resize-work>
 		<div>
-			<p>{{'work.' + item.tag + '.subhead'| translate}}</p>
-			<h2>{{'work.' + item.tag + '.name'| translate}}</h2>
-			<p>{{'work.' + item.tag + '.date'| translate}}</p>
+			<div class="container">
+				<p>{{'work.' + item.tag + '.subhead'| translate}}</p>
+				<h2>{{'work.' + item.tag + '.name'| translate}}</h2>
+				<p>{{'work.' + item.tag + '.date'| translate}}</p>
+			</div>
 		</div>
 	</div>
 
 	<div class="bottom item" data-resize-work>
 		<div>
-			<p>{{'work.' + item.tag + '.description'| translate}}</p>
-			<!--<button class="button">{{'work.info'| translate}}</button>-->
-			<a data-ng-href="{{item.url}}" class="button" target="_blank">{{'work.site'| translate}}</a>
+			<div class="container">
+				<p>{{'work.' + item.tag + '.description'| translate}}</p>
+				<a data-ng-href="{{item.url}}" class="button" target="_blank">{{'work.site'| translate}}</a>
+			</div>
 		</div>
 	</div>
 </div>
