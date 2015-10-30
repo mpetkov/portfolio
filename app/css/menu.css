@@ -13,6 +13,7 @@
 	height: 100%;
 	text-align: center;
 	font-size: 1.4em;
+	min-width: 300px;
 
 }
 
@@ -45,8 +46,8 @@ http://alexgilev.com/portfolio
 .menu h2
 {
 	font-size: 1.2em;
-	margin-top: -10px;
-	margin-bottom: 10px;
+	margin-top: -0.4em;
+	margin-bottom: 0.4em;
 }
 
 
@@ -61,7 +62,7 @@ button
 
 .menu-button
 {
-	padding: 6px 10px 12px 10px;
+	padding: 0px 10px 15px 10px;
 	position: absolute;
 	right: 10px;
 	top: 10px;
@@ -101,12 +102,12 @@ button
 	top: -8px;
 }
 
-.menu-button:hover .bar.bottom
+.desktop .menu-button:hover .bar.bottom
 {
 	top: 12px;
 }
 
-.menu-button:hover .bar.top
+.desktop .menu-button:hover .bar.top
 {
 	top: -12px;
 }
@@ -118,7 +119,7 @@ button
 	transform: scale3d(0.8, 0.8, 0.8);
 }
 
-.menu-button.close:hover
+.desktop .menu-button.close:hover
 {
 	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
@@ -212,6 +213,20 @@ button
 
 
 
+@media (max-width: 650px) 
+{
+
+	.menu-button
+	{
+		-ms-transform: scale(0.8,0.8); /* IE 9 */
+		-webkit-transform: scale(0.8,0.8); /* Safari */
+		transform: scale(0.8,0.8);
+		top: 0px;
+		right: 0px;		
+	}
+}
+
+
 
 
 
@@ -224,9 +239,8 @@ button
 	vertical-align: top;
 	overflow: hidden;
 	margin: 4px;
-	width: 80px;
-	height: 80px;
-	font-size: 0;
+	width: 3.5em;
+    height: 3.5em;
 	text-indent: -9999px;
 }
 
@@ -271,14 +285,14 @@ button
 	background-color: #a4c959;
 }
 
-.icon-cube:hover::before 
+.desktop .icon-cube:hover::before 
 {
 	opacity: 0;
 	-webkit-transform: translateY(-48px) rotateX(90deg);
 	transform: translateY(-48px) rotateX(90deg);
 }
 
-.icon-cube:hover::after 
+.desktop .icon-cube:hover::after 
 {
 	opacity: 1;
 	-webkit-transform: rotateX(0);
@@ -312,4 +326,17 @@ button
 .icon-cube.github::after 
 {
 	background-color: #333333;
+}
+
+
+
+
+
+@media (max-width: 600px), (max-height: 400px) 
+{
+
+	.menu
+	{
+		font-size: 0.8em;	
+	}
 }

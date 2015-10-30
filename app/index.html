@@ -45,7 +45,7 @@
 		<link rel="stylesheet" href="css/splash.css">
 		<link rel="stylesheet" href="css/work.css">
 		<!-- endinject -->
-		
+
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
@@ -68,25 +68,33 @@
 		<meta name="theme-color" content="#ffffff">
 	</head>
 
-	<body data-resize-window>
-		<!--[if lt IE 9]><!-->
+	<body data-resize-window data-init data-ng-class="useragent">
+		<!--[if lt IE 9]>
 		<div class="fallback">
-			<div class="center-middle">
-				<div class="center-inner">
-					<img id="headline" src="img/headline-us.png" alt="Wedding" />
+			<div>
+				<img class="logo" src="img/logo-white.svg">
 
-					<div class="full-width">
-						<div class="box box-color">
-							<h4>Your browser is not supported!</h4>
-							<h4>Please try a different browser.</h4>
-						</div>
+				<div class="full-width">
+					<div class="box box-color">
+						<h2>Your browser is not supported!</h2>
+						<h2>Please try a different browser.</h2>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--<![endif]-->
+		<![endif]-->
 
-
+		
+		<div class="browser-size">
+			<div>
+				<div class="full-width">
+					<div class="box box-color">
+						<h2>Your browser size is too small!</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<!--[if gt IE 8]><!-->
 		<div class="preloader " data-preloader>
 			<div>
@@ -106,10 +114,7 @@
 			<div data-menu></div>
 			<div data-pages></div>
 		</div>
-		<!--<![endif]-->
 
-
-		<!--[if gt IE 8]><!-->
 		<!-- bower:js -->
 		<script src="lib/angular/angular.js"></script>
 		<script src="lib/jquery/dist/jquery.js"></script>
@@ -118,6 +123,8 @@
 		<script src="lib/angular-sanitize/angular-sanitize.js"></script>
 		<script src="lib/angular-translate/angular-translate.js"></script>
 		<script src="lib/fullpage-js/jquery.fullPage.js"></script>
+		<script src="lib/ng-device-detector/ng-device-detector.js"></script>
+		<script src="lib/re-tree/re-tree.js"></script>
 		<!-- endinject -->
 
 		<!-- inject:js -->
@@ -128,18 +135,18 @@
 		<script src="src/utils/resizeWindow.js"></script>
 		<script src="src/utils/translationService.js"></script>
 		<script src="src/components/jquery/fullpage.js"></script>
-		<script src="src/components/header/header.js"></script>
-		<script src="src/components/header/headerController.js"></script>
-		<script src="src/components/header/menu/menu.js"></script>
-		<script src="src/components/header/menu/menuController.js"></script>
 		<script src="src/components/pages/pages.js"></script>
 		<script src="src/components/pages/pagesController.js"></script>
 		<script src="src/components/preloader/preloader.js"></script>
+		<script src="src/components/header/header.js"></script>
+		<script src="src/components/header/headerController.js"></script>
 		<script src="src/components/splash/slideshow.js"></script>
 		<script src="src/components/splash/splash.js"></script>
 		<script src="src/components/splash/splashController.js"></script>
 		<script src="src/components/work/resizeWork.js"></script>
 		<script src="src/components/work/work.js"></script>
+		<script src="src/components/header/menu/menu.js"></script>
+		<script src="src/components/header/menu/menuController.js"></script>
 		<!-- endinject -->
 
 		<!--<![endif]-->

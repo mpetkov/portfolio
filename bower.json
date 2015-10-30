@@ -19,6 +19,7 @@
     "angular-sanitize": "~1.4.7",
     "angular-translate": "~2.7.2",
     "fullpage.js": "~2.7.4",
+    "ng-device-detector": "~2.0.2",
     "normalize-css": "normalize.css#~3.0.3"
   }
 }

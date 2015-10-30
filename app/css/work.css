@@ -91,17 +91,25 @@
 	}
 }
 
-@media (max-height: 640px) 
+@media (max-height: 640px)  and (max-width: 500px)
 {
-	.work .button
+	.work
 	{
-		border-width:  1px;
-		margin-top: 0.9em;
+		font-size: 0.8em;
 	}
 }
 
 
-@media (max-height: 600px) and (min-width: 1650px)
+@media (max-height: 640px) and (max-width: 500px) and (min-width: 400px)
+{	
+	.work.bg-image
+	{
+		background-size: 50%;
+	}
+}
+
+
+@media (max-height: 600px) and (min-width: 1000px)
 {  
 	.work.bg-image
 	{
@@ -109,7 +117,7 @@
 	}
 }
 
-@media (max-height: 480px) and (min-width: 1650px)
+@media (max-height: 480px) and (min-width: 1000px)
 {  
 	.work.bg-image
 	{
@@ -118,12 +126,26 @@
 }
 
 
-@media (max-height: 480px) and (max-width: 480px)
+@media (max-height: 480px) and (max-width: 600px) and (min-width: 400px)
 {  
+	.work .item.bottom p
+	{
+		display: none;
+	}
+	
 	.work.bg-image
 	{
-		background-size: 80%;
+		background-size: 50%;
+		font-size: 0.7em;
 	}
+
+	.work .button 
+	{
+		border-width: 1px;
+		margin-top: -3em;
+		font-size: 0.7em;
+	}
+
 }
 
 @media (max-height: 480px) and (min-width: 700px) and (max-width: 1000px)
@@ -134,11 +156,19 @@
 	}
 }
 
-@media (max-height: 430px) and (min-width: 700px)
+@media (max-height: 430px) and (min-width: 600px) and (max-width: 1000px)
 {  
 	.work.bg-image
 	{
-		background-size: 25%;
+		background-size: 35%;
+	}
+}
+
+@media (max-height: 400px)
+{  
+	.work .item.bottom p
+	{
+		display: none;
 	}
 }
 
@@ -154,7 +184,7 @@
 { 
 	.work.bg-image
 	{
-		background-size: 18%;
+		background-size: 10%;
 	}
 
 	.work .item.top

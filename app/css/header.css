@@ -14,7 +14,7 @@
 	top: 15px;
 }
 
-.header .logo:hover
+.desktop .header .logo:hover
 {
 	-webkit-transform: rotate(45deg); 
 	-moz-transform: rotate(45deg); 
@@ -25,18 +25,6 @@
 
 
 
-
-/*
-.header .nav:hover
-{
-	top: 16px;
-}
-
-.header .nav:hover .bar
-{
-	margin-bottom: 8px;
-}
-*/
 
 @media (max-width: 650px) 
 {
@@ -49,7 +37,7 @@
 		top: -2px;
 	}
 
-	.header .logo:hover
+	.desktop .header .logo:hover
 	{
 		-webkit-transform: rotate(45deg) scale(0.6,0.6); 
 		-moz-transform: rotate(45deg) scale(0.6,0.6); 

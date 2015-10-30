@@ -1,43 +1,42 @@
-.fallback
+.fallback, .browser-size
 {
-	width: 100%;
-	padding: 0;
-	display: none;
-	height: 100%;
 	position: fixed;
+	width: 100%;
+	height: 100%;
 	top: 0;
 	left: 0;
-	margin: 0;
-	z-index: 1050;
+	background-color: #a4c959;
+	z-index: 1001;
 	text-align: center;
-	color: #FFFFFF;
-}
-
-.fallback .box
-{
-	display: inline-block;
-	padding: 10px;
-	max-width: 400px;
-	margin: 0;
-}
-
-.fallback img
-{
-	margin-top: 20px;
-	margin-bottom: 30px;
-}
-
-.ie8 .fallback
-{
 	display: table;
 }
 
-.ie7 .fallback, .ie6 .fallback
+.fallback>div, .browser-size>div
 {
-	display: block;
+	display: table-cell;
+	vertical-align: middle;
 }
 
-.ie7 .fallback img, .ie6 .fallback img
+.fallback .logo
 {
-	margin-top: 100px;
+	width: 120px;
+    margin-bottom: 15px;
+}
+
+
+
+.browser-size
+{
+	display: none;
+}
+
+
+
+@media (max-height: 300px) 
+{ 
+	.browser-size
+	{
+		display: table;
+	}
+
 }

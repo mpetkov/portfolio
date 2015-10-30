@@ -45,7 +45,7 @@ a:visited
 	outline: 0;
 }
 
-a:hover
+a:hover, .mobile a
 {
 	color: #a4c959;
 }
@@ -99,7 +99,7 @@ h2, p, button, span, .nav, path, .logo, a
 	border: 1px solid;
 	font-size: 0.55em;
 	padding: 5px 10px;
-	margin: 1em;
+	margin: 1.3em;
 	letter-spacing: 1px;
 	display: inline-block;
 }
@@ -109,14 +109,14 @@ a.button, .button
 	color: white;
 }
 
-a.button:hover, .button:hover
+.desktop a.button:hover, .desktop .button:hover
 {
 	background: white;
 	color: #333333;
 	border-color: rgba(0,0,0,0);
 }
 
-.dark a.button:hover, .dark .button:hover
+.desktop .dark a.button:hover, .desktop .dark .button:hover
 {
 	background: #333333;
 	color: #FFFFFF;
