@@ -51,15 +51,25 @@
 								}
 							});
 				});
+				
+				
+				scope.$on('fullpage::menu', function (event, isEnabled)
+				{
+					$.fn.fullpage.setAllowScrolling(!isEnabled);
+					$.fn.fullpage.setKeyboardScrolling(!isEnabled);
+					
+					var color = 'current';
+					if(isEnabled)
+					{
+						color = 'FFFFFF'
+					}
+					
+					changeColor(color);
+				});
 
 				scope.$on('fullpage::change', function (event, index)
 				{
 					$.fn.fullpage.moveTo(index);
-				});
-
-				scope.$on('fullpage::color', function (event, color)
-				{
-					changeColor(color);
 				});
 
 				function changeColor(color)

@@ -33,11 +33,6 @@ h2
 	font-weight: 700;
 }
 
-.icon:hover svg path
-{
-	fill: #a4c959;
-}
-
 a,
 a:link,
 a:active,
@@ -46,8 +41,13 @@ a:visited
 {
 	text-decoration: none;
 	cursor: pointer;
-	color: #a4c959;
+	color: #FFFFFF;
 	outline: 0;
+}
+
+a:hover
+{
+	color: #a4c959;
 }
 
 p
@@ -116,13 +116,13 @@ a.button:hover, .button:hover
 	border-color: rgba(0,0,0,0);
 }
 
-.dark .button:hover
+.dark a.button:hover, .dark .button:hover
 {
 	background: #333333;
 	color: #FFFFFF;
 }
 
-.dark
+.dark, .dark a.button
 {
 	color: #333333;
 }

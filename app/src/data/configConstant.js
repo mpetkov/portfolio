@@ -65,15 +65,15 @@
 		[
 			{
 				url: 'https://www.linkedin.com/in/mpetkov',
-				img: 'img/linkedin-white.svg'
+				type: 'linkedin'
 			},
 			{
 				url: 'http://www.marinpetkov.com/resume.pdf',
-				img: 'img/cv-white.svg'
+				type: 'cv'
 			},
 			{
-				url: '',
-				img: 'img/github-white.svg'
+				url: 'https://github.com/mpetkov',
+				type: 'github'
 			}
 		]
 	};

@@ -7,8 +7,9 @@
 			<p>{{'menu.p1'| translate}}</p>
 			<p data-ng-bind-html="'menu.p2' | translate"></p>
 			<ul>
-				<li class="icon" data-ng-repeat="item in menu.config.menuIcons">
-					<a data-ng-href="item.url" data-ng-include="item.img" target="_blank"></a>
+				
+				<li data-ng-repeat="item in menu.config.menuIcons">
+					<a data-ng-href="{{item.url}}" class="icon icon-cube {{item.type}}" target="_blank">{{item.type}}</a>
 				</li>
 			</ul>
 		</div>

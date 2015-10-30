@@ -13,7 +13,7 @@
 	height: 100%;
 	text-align: center;
 	font-size: 1.4em;
-	
+
 }
 
 .menu ul
@@ -45,6 +45,8 @@ http://alexgilev.com/portfolio
 .menu h2
 {
 	font-size: 1.2em;
+	margin-top: -10px;
+	margin-bottom: 10px;
 }
 
 
@@ -208,3 +210,106 @@ button
 	from { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
 }
 
+
+
+
+
+
+
+
+
+.icon 
+{
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	margin: 4px;
+	width: 80px;
+	height: 80px;
+	font-size: 0;
+	text-indent: -9999px;
+}
+
+
+.icon-cube 
+{
+	position: relative;
+	-webkit-perspective: 800px;
+	perspective: 800px;
+	overflow: visible;
+}
+
+.icon-cube::before,
+.icon-cube::after 
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: no-repeat center;
+	background-size: 100%;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.icon-cube::before 
+{
+	z-index: 2;
+	background-color: none;
+	border: 1px solid #FFFFFF;
+}
+
+.icon-cube::after 
+{
+	z-index: 1;
+	opacity: 0;
+	-webkit-transform: translateY(48px) rotateX(-90deg);
+	transform: translateY(48px) rotateX(-90deg);
+	background-color: #a4c959;
+}
+
+.icon-cube:hover::before 
+{
+	opacity: 0;
+	-webkit-transform: translateY(-48px) rotateX(90deg);
+	transform: translateY(-48px) rotateX(90deg);
+}
+
+.icon-cube:hover::after 
+{
+	opacity: 1;
+	-webkit-transform: rotateX(0);
+	transform: rotateX(0);
+}
+
+.icon-cube.linkedin::before,
+.icon-cube.linkedin::after 
+{
+	background-image: url("../img/linkedin-white.svg"), none;
+}
+
+.icon-cube.linkedin::after 
+{
+	background-color: #007BB5;
+}
+
+.icon-cube.cv::before,
+.icon-cube.cv::after 
+{
+	background-image: url("../img/cv-white.svg"), none;
+}
+
+
+.icon-cube.github::before,
+.icon-cube.github::after 
+{
+	background-image: url("../img/github-white.svg"), none;
+}
+
+.icon-cube.github::after 
+{
+	background-color: #333333;
+}
