@@ -41,3 +41,10 @@
 	}
 
 }
+
+
+.old-ie .fallback
+{
+	padding-top: 80px;
+}
+
