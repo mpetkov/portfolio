@@ -106,12 +106,12 @@ button
 
 .menu-button.close 
 {
-	transform: scale3d(0.8, 0.8, 0.8);
+	transform: scale(0.8);
 }
 
 .desktop .menu-button.close:hover
 {
-	transform: scale3d(1, 1, 1);
+	transform: scale(1);
 }
 
 .menu-button.x.close .bar.middle 
@@ -127,18 +127,23 @@ button
 
 .menu-button.x.close .bar.top
 {
-	transform: rotate3d(0, 0, 1, 45deg);
+	transform: rotate(45deg); 
 }
 
 .menu-button.x.close .bar.bottom
 {
-	transform: rotate3d(0, 0, 1, -45deg);
+	transform: rotate(-45deg); 
 }
 
 
 .menu.hide 
 {
 	animation: animHideMenu 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+.ie9 .menu.hide 
+{
+	display: none;
 }
 
 @keyframes animHideMenu 
@@ -181,9 +186,6 @@ button
 		right: 0px;		
 	}
 }
-
-
-
 
 
 .icon 

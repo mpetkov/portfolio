@@ -15,6 +15,11 @@
 	opacity: 0;
 }
 
+.ie9 .work .item
+{
+	opacity: 1;
+}
+
 .item.bottom
 {
 	bottom: 0;
@@ -133,7 +138,7 @@
 	{
 		display: none;
 	}
-	
+
 	.work.bg-image
 	{
 		background-size: 50%;

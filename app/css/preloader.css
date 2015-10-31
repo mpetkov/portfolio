@@ -20,6 +20,7 @@
 .preloader .logo
 {
 	width: 120px;
+	height: 100px;
     margin-bottom: 15px;
 }
 
@@ -27,6 +28,11 @@
 .preloader.loaded 
 {
 	animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+.ie9 .preloader.loaded 
+{
+	display: none;
 }
 
 @keyframes animLoadedHeader 
