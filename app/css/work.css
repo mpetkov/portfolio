@@ -43,7 +43,6 @@
 	display: inline-block;
 }
 
-
 .item.bottom div
 {
 	padding-top: 20px;
@@ -54,21 +53,16 @@
 	font-size: 0.6em;
 }
 
-
 .work  .item
 {
 	animation: animationOut 0.25s cubic-bezier(0.7,0,0.3,1) both;
 }
-
 
 .fp-section.active .work  .item
 {
 	animation: animation 1s cubic-bezier(0.7,0,0.3,1) both;
 	animation-delay: 0.4s;
 }
-
-
-
 
 @keyframes animation
 {
@@ -105,7 +99,6 @@
 	}
 }
 
-
 @media (max-height: 640px) and (max-width: 500px) and (min-width: 400px)
 {	
 	.work.bg-image
@@ -113,7 +106,6 @@
 		background-size: 50%;
 	}
 }
-
 
 @media (max-height: 600px) and (min-width: 1000px)
 {  
@@ -130,7 +122,6 @@
 		background-size: 20%;
 	}
 }
-
 
 @media (max-height: 480px) and (max-width: 600px) and (min-width: 400px)
 {  
@@ -151,7 +142,6 @@
 		margin-top: -3em;
 		font-size: 0.7em;
 	}
-
 }
 
 @media (max-height: 480px) and (min-width: 700px) and (max-width: 1000px)

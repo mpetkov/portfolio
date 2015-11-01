@@ -1,6 +1,6 @@
 html
 {
-	color: white;
+	color: #FFFFFF;
 	font-family: 'Open Sans', sans-serif;
 	min-width: 320px;
 	overflow: hidden;
@@ -10,6 +10,8 @@ html
 h1
 {
 	margin: 0;
+	font-weight: 600;
+	line-height: normal;
 }
 
 h2
@@ -17,7 +19,7 @@ h2
 	font-size: 1.3em;
 	line-height: normal;
 	margin: 0;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 a,
@@ -53,19 +55,6 @@ h2, p, button, span, .nav, path, .logo, a
     transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.cover
-{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background: #000000;
-	opacity: 0.5;
-	z-index: 2;
-	top: 0;
-	left: 0;
-}
-
-
 .bg-image
 {
 	background: no-repeat center;
@@ -78,6 +67,13 @@ h2, p, button, span, .nav, path, .logo, a
 .ios .bg-image
 {
 	background-attachment: scroll;
+}
+
+button 
+{
+	border: none;
+	background: none;
+	outline: none;
 }
 
 .button
@@ -93,12 +89,12 @@ h2, p, button, span, .nav, path, .logo, a
 
 a.button, .button
 {
-	color: white;
+	color: #FFFFFF;
 }
 
 .desktop a.button:hover, .desktop .button:hover
 {
-	background: white;
+	background: #FFFFFF;
 	color: #333333;
 	border-color: rgba(0,0,0,0);
 }
@@ -114,20 +110,36 @@ a.button, .button
 	color: #333333;
 }
 
-#fp-nav
-{
-	z-index: 0;
-}
-
-#fp-nav ul li a span, .fp-slidesNav ul li a span
-{
-	background-color: #FFFFFF;
-}
-
 @media (max-height: 320px) 
 {
   .bg-image
   {
     background-attachment: scroll;
   }
+}
+
+.center-outer
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #a4c959;
+	z-index: 1001;
+	text-align: center;
+	display: table;
+	min-width: 300px;
+	margin: 0 auto;
+}
+
+.center-middle
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.center-inner
+{
+	display: inline-block;
 }

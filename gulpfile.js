@@ -74,7 +74,7 @@ gulp.task('build-vendor-js', 'Build an optimized version of vendor JS files', fu
 
 gulp.task('build-css', 'Build an optimized version of all CSS files', function ()
 {
-	return gulp.src(cssFiles)
+	return gulp.src([devDest + 'css/global.css', cssFiles])
 			  .pipe(plugins.concat(cssFilename))
 			  .pipe(plugins.autoprefixer(AUTOPREFIXER_BROWSERS))
 			  .pipe(plugins.csso())
@@ -176,7 +176,7 @@ gulp.task('dev-inject', 'Build an optimized version of index.html', function ()
 {
 	return gulp.src(devDest + 'index.html')
 			  .pipe(plugins.inject(gulp.src([devDest + 'lib/angular/*.js', devDest + 'lib/jquery/**/*.js', libFiles + '/*.js', libFiles + '/*.css'], {read: false}), {addRootSlash: false, ignorePath: '/app/', name: 'bower'}))
-			  .pipe(plugins.inject(gulp.src([jsFiles, fontCssFiles, cssFiles], {read: false}), {addRootSlash: false, ignorePath: '/app/'}))
+			  .pipe(plugins.inject(gulp.src([jsFiles, fontCssFiles, devDest + 'css/global.css', cssFiles], {read: false}), {addRootSlash: false, ignorePath: '/app/'}))
 			  .pipe(gulp.dest(devDest));
 });
 

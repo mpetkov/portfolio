@@ -1,13 +1,12 @@
-<div class="menu" data-ng-class="{hide: !menu.shared.isMenu, show: menu.shared.isMenu}" >
-	<div class="cover"></div>
-	<div class="item top">
-		<div>
+<div class="menu center-outer" data-ng-class="{show: menu.shared.isMenu}" >
+	<div class="center-middle">
+		<div class="center-inner">
 			<h1 data-ng-bind-html="'menu.headline' | translate"></h1>
 			<h2>{{'menu.subhead'| translate}}</h2>
 			<p>{{'menu.p1'| translate}}</p>
 			<p data-ng-bind-html="'menu.p2' | translate"></p>
 			<ul>
-				
+
 				<li data-ng-repeat="item in menu.config.menuIcons">
 					<a data-ng-href="{{item.url}}" class="icon icon-cube {{item.type}}" target="_blank">{{item.type}}</a>
 				</li>

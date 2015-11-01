@@ -2,7 +2,7 @@
 {
 	'use strict';
 
-	var resizeWindow = function ($window, $timeout)
+	var resizeWindow = function ($window, $timeout, deviceDetector)
 	{
 		return {
 			restrict: "A",
@@ -18,7 +18,10 @@
 
 				w.on('orientationchange', function ()
 				{
-					triggerTimer();
+					$timeout(function ()
+					{
+						$window.location.reload();
+					}, 200);
 				});
 
 				scope.$on('resize::trigger', function (event, data)
@@ -34,11 +37,21 @@
 
 				function triggerEvent()
 				{
-					scope.$broadcast('resize::resize', {width: $window.innerWidth, height: $window.innerHeight});
+					var height = $window.innerHeight;
+					
+					if(deviceDetector.device == 'ipad')
+					{
+						if($window.orientation == 90 || $window.orientation == -90)
+						{
+							height -= 20;
+						}
+					}
+					
+					scope.$broadcast('resize::resize', {width: $window.innerWidth, height: height});
 				}
 			}
 		};
 	};
 
-	angular.module('portfolio').directive('resizeWindow', ['$window', '$timeout', resizeWindow]);
+	angular.module('portfolio').directive('resizeWindow', ['$window', '$timeout', 'deviceDetector', resizeWindow]);
 })();

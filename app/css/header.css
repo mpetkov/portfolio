@@ -19,18 +19,106 @@
 	transform: rotate(45deg); 
 }
 
+.header .menu-button
+{
+	padding: 0px 10px 15px 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.header .menu-button > span
+{
+	display: inline-block;
+	width: 35px;
+	position: relative;
+}
+
+
+
+.header .menu-button .bar
+{
+	height: 3px;
+	background: #FFFFFF;
+	transition: 0.3s;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	content: '';
+	transform-origin: 2px center;
+}
+
+
+.header .menu-button .bar.bottom
+{
+	top: 8px;
+}
+
+.header .menu-button .bar.top
+{
+	top: -8px;
+}
+
+.desktop .header .menu-button:hover .bar.bottom
+{
+	top: 12px;
+}
+
+.desktop .header .menu-button:hover .bar.top
+{
+	top: -12px;
+}
+
+
+.header .menu-button.close 
+{
+	transform: scale(0.8);
+}
+
+.desktop .header .menu-button.close:hover
+{
+	transform: scale(1);
+}
+
+.header .menu-button.x.close .bar.middle 
+{
+	opacity: 0;
+}
+
+.header .menu-button.x.close .bar.top, .header .menu-button.x.close .bar.bottom
+{
+	transform-origin: 50% 50%;
+	top: 0;
+}
+
+.header .menu-button.x.close .bar.top
+{
+	transform: rotate(45deg); 
+}
+
+.header .menu-button.x.close .bar.bottom
+{
+	transform: rotate(-45deg); 
+}
 
 @media (max-width: 650px) 
 {
 	.header .logo
 	{
-		transform: scale(0.6,0.6);
+		transform: scale(0.6, 0.6);
 		left: -2px;
 		top: -2px;
 	}
 
 	.desktop .header .logo:hover
 	{
-		transform: rotate(45deg) scale(0.6,0.6); 
+		transform: rotate(45deg) scale(0.6, 0.6); 
+	}
+	
+	.header .menu-button
+	{
+		transform: scale(0.8, 0.8);
+		top: 0px;
+		right: 0px;		
 	}
 }

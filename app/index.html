@@ -10,7 +10,7 @@
 
 		<meta name="author" content="Marin Petkov" />
 		<meta name="description" content="Interactive portfolio for Marin Petkov who is a full stack web developer from Chicago, IL" />
-		
+
 		<meta property="og:image" content="img/favicons/badge.png" />
 		<meta property="og:title" content="Marin Petkov - Full Stack Web Developer Portfolio" />
 		<meta property="og:description" content="Interactive portfolio for Marin Petkov who is a full stack web developer from Chicago, IL" />
@@ -21,9 +21,8 @@
 		<!-- endinject -->
 
 		<!-- inject:css -->
-		<link rel="stylesheet" href="css/animations.css">
-		<link rel="stylesheet" href="css/fallback.css">
 		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/fallback.css">
 		<link rel="stylesheet" href="css/header.css">
 		<link rel="stylesheet" href="css/menu.css">
 		<link rel="stylesheet" href="css/preloader.css">
@@ -32,7 +31,7 @@
 		<link rel="stylesheet" href="css/work.css">
 		<!-- endinject -->
 
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
 		<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
@@ -76,40 +75,41 @@
 
 	<body data-resize-window data-init data-ng-class="useragent">
 		<!--[if lt IE 9]>
-		<div class="fallback">
-			<div>
-				<img class="logo" src="img/logo-white.png">
+		<div class="fallback center-outer">
+			<div class="center-middle">
+				<div class="center-inner">
+					<img class="logo" src="img/logo-white.png">
 
-				<div class="full-width">
-					<div class="box box-color">
-						<h2>Your browser is not supported!</h2>
-						<h2>Please try a different browser.</h2>
+					<div class="full-width">
+						<div class="box box-color">
+							<h2>Your browser is not supported!</h2>
+							<h2>Please try a different browser.</h2>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<![endif]-->
 
-
-		<div class="browser-size">
-			<div>
-				<div class="full-width">
-					<div class="box box-color">
-						<h2>Your browser size is too small!</h2>
-					</div>
+		<div class="browser-size center-outer">
+			<div class="center-middle">
+				<div class="center-inner">
+					<h2>Your browser size is too small!</h2>
 				</div>
 			</div>
 		</div>
 
 		<!--[if gt IE 8]><!-->
-		<div class="preloader " data-preloader>
-			<div>
-				<img class="logo" src="img/logo-white.svg">
-				<div class="loader-container">
-					<div class="loader">
-						<div class="bounce1"></div>
-						<div class="bounce2"></div>
-						<div class="bounce3"></div>
+		<div class="preloader center-outer" data-preloader>
+			<div class="center-middle">
+				<div class="center-inner">
+					<img class="logo" src="img/logo-white.svg">
+					<div class="loader-container">
+						<div class="loader">
+							<div class="bounce1"></div>
+							<div class="bounce2"></div>
+							<div class="bounce3"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -140,12 +140,12 @@
 		<script src="src/utils/imageonload.js"></script>
 		<script src="src/utils/resizeWindow.js"></script>
 		<script src="src/utils/translationService.js"></script>
-		<script src="src/components/jquery/fullpage.js"></script>
-		<script src="src/components/pages/pages.js"></script>
-		<script src="src/components/pages/pagesController.js"></script>
-		<script src="src/components/preloader/preloader.js"></script>
 		<script src="src/components/header/header.js"></script>
 		<script src="src/components/header/headerController.js"></script>
+		<script src="src/components/jquery/fullpage.js"></script>
+		<script src="src/components/preloader/preloader.js"></script>
+		<script src="src/components/pages/pages.js"></script>
+		<script src="src/components/pages/pagesController.js"></script>
 		<script src="src/components/splash/slideshow.js"></script>
 		<script src="src/components/splash/splash.js"></script>
 		<script src="src/components/splash/splashController.js"></script>

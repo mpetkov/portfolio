@@ -15,13 +15,7 @@
 		$translateProvider.useSanitizeValueStrategy('sanitize');
 		$translateProvider.use(configConstant.setup.language);
 	};
-	
-	var run = function (deviceDetector)
-	{
-		console.log(deviceDetector);
-		console.log(deviceDetector.isDesktop());
-	};
-	
+
 	var init = function (deviceDetector)
 	{
 		return function (scope, element, attrs)

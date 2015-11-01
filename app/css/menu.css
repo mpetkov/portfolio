@@ -1,20 +1,10 @@
-.menu .cover
-{
-	opacity: 0.9;
-}
-
 .menu
 {
-	position: fixed;
-	top: 0;
-	left: 0;
+	top: -150%;
 	z-index: 100;
-	width: 100%;
-	height: 100%;
-	text-align: center;
 	font-size: 1.4em;
-	min-width: 300px;
-
+	transition: all 0.6s cubic-bezier(0.7,0,0.3,1);
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
 .menu ul
@@ -31,258 +21,25 @@
 	margin-left: 10px;
 }
 
-.menu .top p
+.menu p
 {
 	font-size: 1em;
 }
 
-
 .menu h2
 {
-	font-size: 1.2em;
+	font-size: 1.24em;
 	margin-top: -0.4em;
 	margin-bottom: 0.4em;
 }
 
-button 
-{
-	border: none;
-	background: none;
-	outline: none;
-}
-
-
-.menu-button
-{
-	padding: 0px 10px 15px 10px;
-	position: absolute;
-	right: 10px;
-	top: 10px;
-
-}
-
-.menu-button > span
-{
-	display: inline-block;
-	width: 35px;
-	position: relative;
-}
-
-
-
-.menu-button .bar
-{
-	height: 3px;
-	background: #FFFFFF;
-	transition: 0.3s;
-	width: 100%;
-	position: absolute;
-	left: 0;
-	content: '';
-	transform-origin: 2px center;
-}
-
-
-.menu-button .bar.bottom
-{
-	top: 8px;
-}
-
-.menu-button .bar.top
-{
-	top: -8px;
-}
-
-.desktop .menu-button:hover .bar.bottom
-{
-	top: 12px;
-}
-
-.desktop .menu-button:hover .bar.top
-{
-	top: -12px;
-}
-
-
-.menu-button.close 
-{
-	transform: scale(0.8);
-}
-
-.desktop .menu-button.close:hover
-{
-	transform: scale(1);
-}
-
-.menu-button.x.close .bar.middle 
-{
-	opacity: 0;
-}
-
-.menu-button.x.close .bar.top, .menu-button.x.close .bar.bottom
-{
-	transform-origin: 50% 50%;
-	top: 0;
-}
-
-.menu-button.x.close .bar.top
-{
-	transform: rotate(45deg); 
-}
-
-.menu-button.x.close .bar.bottom
-{
-	transform: rotate(-45deg); 
-}
-
-
-.menu.hide 
-{
-	animation: animHideMenu 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
-}
-
-.ie9 .menu.hide 
-{
-	display: none;
-}
-
-@keyframes animHideMenu 
-{
-	to 
-	{ 
-		transform: translate3d(0,-100%,0); 
-	}
-}
-
-@keyframes animHideMenu 
-{
-	to 
-	{
-		transform: translate3d(0,-100%,0);
-	}
-}
-
-
 .menu.show 
 {
-	animation: animShowMenu 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
-}
-
-@keyframes animShowMenu 
-{
-	from 
-	{ 
-		transform: translate3d(0,-100%,0); 
-	}
-}
-
-
-@media (max-width: 650px) 
-{
-	.menu-button
-	{
-		transform: scale(0.8,0.8);
-		top: 0px;
-		right: 0px;		
-	}
-}
-
-
-.icon 
-{
-	display: inline-block;
-	vertical-align: top;
-	overflow: hidden;
-	margin: 4px;
-	width: 3.5em;
-    height: 3.5em;
-	text-indent: -9999px;
-}
-
-
-.icon-cube 
-{
-	position: relative;
-	perspective: 800px;
-	overflow: visible;
-}
-
-.icon-cube::before,
-.icon-cube::after 
-{
-	display: block;
-	position: absolute;
 	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	content: "";
-	background: no-repeat center;
-	background-size: 100%;
-	transition: all 0.3s;
 }
-
-.icon-cube::before 
-{
-	z-index: 2;
-	background-color: none;
-	border: 1px solid #FFFFFF;
-}
-
-.icon-cube::after 
-{
-	z-index: 1;
-	opacity: 0;
-	transform: translateY(48px) rotateX(-90deg);
-	background-color: #a4c959;
-}
-
-.desktop .icon-cube:hover::before 
-{
-	opacity: 0;
-	transform: translateY(-48px) rotateX(90deg);
-}
-
-.desktop .icon-cube:hover::after 
-{
-	opacity: 1;
-	transform: rotateX(0);
-}
-
-.icon-cube.linkedin::before,
-.icon-cube.linkedin::after 
-{
-	background-image: url("../img/linkedin-white.svg"), none;
-}
-
-.icon-cube.linkedin::after 
-{
-	background-color: #007BB5;
-}
-
-.icon-cube.cv::before,
-.icon-cube.cv::after 
-{
-	background-image: url("../img/cv-white.svg"), none;
-}
-
-
-.icon-cube.github::before,
-.icon-cube.github::after 
-{
-	background-image: url("../img/github-white.svg"), none;
-}
-
-.icon-cube.github::after 
-{
-	background-color: #333333;
-}
-
-
 
 @media (max-width: 600px), (max-height: 400px) 
 {
-
 	.menu
 	{
 		font-size: 0.8em;	
