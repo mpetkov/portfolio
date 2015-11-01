@@ -2,7 +2,7 @@
 {
 	'use strict';
 
-	var fullpage = function ($rootScope, configConstant, sharedService)
+	var fullpage = function ($rootScope, $analytics, configConstant, sharedService)
 	{
 		return {
 			restrict: "A",
@@ -13,43 +13,45 @@
 				scope.$on('fullpage::init', function (event, data)
 				{
 					$(element).fullpage
-							({
-								navigation: true,
-								css3: false,
-								responsiveHeight: 320,
-								controlArrows: false,
-								afterRender: function ()
+					({
+						navigation: true,
+						css3: false,
+						responsiveHeight: 320,
+						controlArrows: false,
+						afterRender: function ()
+						{
+							$rootScope.$broadcast('portfolio::ready');
+							$rootScope.$broadcast('resize::trigger');
+						},
+						onLeave: function (index, nextIndex, direction)
+						{
+							$analytics.eventTrack('Switch', {  category: 'Page', label: nextIndex });
+							
+							if (index == '1')
+							{
+								$rootScope.$broadcast('slideshow::stop');
+							}
+							else if (nextIndex == '1')
+							{
+								$rootScope.$broadcast('slideshow::start');
+							}
+
+							currentIndex = nextIndex - 1;
+							if (configConstant.content[currentIndex])
+							{
+								var color = configConstant.content[currentIndex].color;
+
+								if (sharedService.data.isMenu)
 								{
-									$rootScope.$broadcast('portfolio::ready');
-									$rootScope.$broadcast('resize::trigger');
-								},
-								onLeave: function (index, nextIndex, direction)
-								{
-									if (index == '1')
-									{
-										$rootScope.$broadcast('slideshow::stop');
-									}
-									else if (nextIndex == '1')
-									{
-										$rootScope.$broadcast('slideshow::start');
-									}
-
-									currentIndex = nextIndex - 1;
-									if (configConstant.content[currentIndex])
-									{
-										var color = configConstant.content[currentIndex].color;
-
-										if (sharedService.data.isMenu)
-										{
-											color = 'FFFFFF';
-										}
-
-										changeColor(color);
-
-										color = null;
-									}
+									color = 'FFFFFF';
 								}
-							});
+
+								changeColor(color);
+
+								color = null;
+							}
+						}
+					});
 				});
 				
 				
@@ -97,5 +99,5 @@
 		};
 	};
 
-	angular.module('portfolio').directive('fullpage', ['$rootScope', 'configConstant', 'sharedService', fullpage]);
+	angular.module('portfolio').directive('fullpage', ['$rootScope', '$analytics', 'configConstant', 'sharedService', fullpage]);
 })();

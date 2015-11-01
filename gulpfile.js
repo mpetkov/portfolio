@@ -156,20 +156,47 @@ gulp.task('dev-lib-clean', 'Deletes the build folder', false, function ()
 	return clean.sync(devDest + 'lib/**');
 });
 
-gulp.task('dev-copy-lib', 'Parses out only the required library files', function ()
+gulp.task('dev-copy-main-lib', 'Parses out only the main library files', function ()
 {
 	return gulp.src(plugins.mainBowerFiles(), {base: './bower_components'})
 				.pipe(plugins.rename(function(path)
 				{
 						path.dirname = path.dirname.split('.').join('-');      
 				}))
-			  .pipe(gulp.dest(devDest + 'lib/'));
+			  .pipe(gulp.dest(tmpDest));
 });
 
+gulp.task('dev-copy-lib', 'Parses out only the required library files for this project', function ()
+{
+	return gulp.src
+	([
+		tmpDest + '**', 
+		'!' + tmpDest + '**/*.scss', 
+		'!' + tmpDest + 'angulartics/**/angulartics-adobe.js', 
+		'!' + tmpDest + 'angulartics/**/angulartics-chartbeat.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-clicky.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-cnzz.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-flurry.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-ga-cordova.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-gtm.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-inspectlet.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-intercom.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-kissmetrics.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-marketo.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-mixpanel.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-newrelic-insights.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-piwik.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-scroll.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-segmentio.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-splunk.js',
+		'!' + tmpDest + 'angulartics/**/angulartics-woopra.js'
+	])
+			   .pipe(gulp.dest(devDest + 'lib/'));
+});
 
 gulp.task('dev-bower-lib', 'Parses out only the required library files', function (callback)
 {
-	sequence('dev-lib-clean', 'dev-copy-lib', callback);
+	sequence('dev-lib-clean', 'dev-copy-main-lib', 'dev-copy-lib', 'build-clean-temp', callback);
 });
 
 gulp.task('dev-inject', 'Build an optimized version of index.html', function ()

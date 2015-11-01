@@ -4,11 +4,24 @@
 			<h1 data-ng-bind-html="'menu.headline' | translate"></h1>
 			<h2>{{'menu.subhead'| translate}}</h2>
 			<p>{{'menu.p1'| translate}}</p>
-			<p data-ng-bind-html="'menu.p2' | translate"></p>
+			<p	data-ng-bind-html="'menu.p2' | translate"
+				data-analytics-on="click"
+				data-analytics-event="Click"
+				data-analytics-category="Links"
+				data-analytics-label="email"></p>
 			<ul>
 
 				<li data-ng-repeat="item in menu.config.menuIcons">
-					<a data-ng-href="{{item.url}}" class="icon icon-cube {{item.type}}" target="_blank">{{item.type}}</a>
+					<a 
+						data-ng-href="{{item.url}}" 
+						class="icon icon-cube {{item.type}}" 
+						target="_blank"
+						data-analytics-on="click"
+						data-analytics-event="Click"
+						data-analytics-category="Links"
+						data-analytics-label="{{item.type}}">
+						{{item.type}}
+					</a>
 				</li>
 			</ul>
 		</div>

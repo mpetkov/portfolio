@@ -36,18 +36,9 @@
 				}
 
 				function triggerEvent()
-				{
-					var height = $window.innerHeight;
-					
-					if(deviceDetector.device == 'ipad')
-					{
-						if($window.orientation == 90 || $window.orientation == -90)
-						{
-							height -= 20;
-						}
-					}
-					
-					scope.$broadcast('resize::resize', {width: $window.innerWidth, height: height});
+				{					
+					scope.$broadcast('resize::resize', {width: $window.innerWidth, height: $window.innerHeight});
+					$window.scrollTo(0,0);
 				}
 			}
 		};

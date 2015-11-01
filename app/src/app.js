@@ -2,7 +2,7 @@
 {
 	'use strict';
 
-	var config = function ($logProvider, $translateProvider, configConstant)
+	var config = function ($logProvider, $translateProvider, $analyticsProvider, configConstant)
 	{
 		$logProvider.debugEnabled(false);
 
@@ -14,6 +14,9 @@
 
 		$translateProvider.useSanitizeValueStrategy('sanitize');
 		$translateProvider.use(configConstant.setup.language);
+		
+		$analyticsProvider.firstPageview(true);
+		$analyticsProvider.withAutoBase(true);
 	};
 
 	var init = function (deviceDetector)
@@ -35,8 +38,8 @@
 			scope.useragent = useragent;
 		};
 	};
-
-	angular.module('portfolio', ['pascalprecht.translate', 'ngSanitize', 'ng.deviceDetector'])
-			.config(['$logProvider', '$translateProvider', 'configConstant', config])
+	
+	angular.module('portfolio', ['pascalprecht.translate', 'ngSanitize', 'ng.deviceDetector', 'angulartics', 'angulartics.google.analytics'])
+			.config(['$logProvider', '$translateProvider', '$analyticsProvider', 'configConstant', config])
 			.directive('init', ['deviceDetector', init]);
 })();

@@ -1,12 +1,21 @@
 <div class="header">
-	<div class="logo" data-ng-click="header.clickLogo()">
+	<div class="logo"
+		data-ng-click="header.clickLogo()"
+		data-analytics-on="click"
+		data-analytics-event="Click"
+		data-analytics-category="Button"
+		data-analytics-label="logo">
 		<a href="javascript:void(0)" data-ng-include="'img/logo-white.svg'"></a>
 	</div>
 	
 	<button type="button" role="button" aria-label="Toggle Navigation" 
 			data-ng-click="header.clickMenu()" 
 			class="menu-button x" 
-			data-ng-class="{close: header.shared.isMenu}">		
+			data-ng-class="{close: header.shared.isMenu}"
+			data-analytics-on="click"
+			data-analytics-event="Click"
+			data-analytics-category="Button"
+			data-analytics-label="menu">		
 		<span>
 			<span class="bar top"></span>
 			<span class="bar middle"></span>

@@ -16,7 +16,16 @@
 		<div>
 			<div class="container">
 				<p>{{'work.' + item.tag + '.description'| translate}}</p>
-				<a data-ng-href="{{item.url}}" class="button" target="_blank">{{'work.site'| translate}}</a>
+				<a 
+					data-ng-href="{{item.url}}" 
+					class="button" 
+					target="_blank"
+					data-analytics-on="click"
+					data-analytics-event="Click"
+					data-analytics-category="Site"
+					data-analytics-label="{{item.tag}}">
+					{{'work.site'| translate}}
+				</a>
 			</div>
 		</div>
 	</div>
